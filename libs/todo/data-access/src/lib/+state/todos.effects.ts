@@ -4,8 +4,7 @@ import { fetch, pessimisticUpdate } from '@nrwl/angular';
 
 import * as TodosActions from './todos.actions';
 import { TodoLocalStorageService } from '../services/todo-local-storage.service';
-import { delay, map, withLatestFrom } from 'rxjs/operators';
-import { getSelected } from './todos.selectors'
+import { delay, map} from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromTodos from './todos.reducer';
 
@@ -62,20 +61,6 @@ export class TodosEffects {
         },
       })
     )
-  );
-
-  editCurrentTodo$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(TodosActions.editCurrentTodo),
-      withLatestFrom(this.store.select(getSelected)),
-      map(([action, current]) => TodosActions.editTodo({todo:current, patch: action.patch})))
-  );
-
-  removeCurrentTodo$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(TodosActions.removeCurrentTodo),
-      withLatestFrom(this.store.select(getSelected)),
-      map(([_, current]) => TodosActions.removeTodo({todo:current})))
   );
 
   addTodo$ = createEffect(() =>

@@ -7,47 +7,24 @@ import { Observable, Subscription } from 'rxjs';
   templateUrl: './todo-crud.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TodoCrudComponent implements OnInit, OnDestroy {
+export class TodoCrudComponent implements OnInit {
 
   constructor(private todoFacade: TodosFacade) {
     this.todosDone$ = todoFacade.allDone$;
     this.todosNotDone$ = todoFacade.allNotDone$;
-    this.selectTodo$ = todoFacade.selectedTodos$;
     this.loaded$ = todoFacade.loaded$;
   }
 
-  currentTodo: TodosEntity;
   loaded$: Observable<boolean>;
   todosDone$: Observable<TodosEntity[]>;
   todosNotDone$: Observable<TodosEntity[]>;
-  selectTodo$: Observable<TodosEntity>;
-
-  private selectSubscription: Subscription;
 
   ngOnInit(): void {
     this.todoFacade.loadTodos();
-
-    this.selectSubscription = this.selectTodo$.subscribe(
-      current => {
-        this.currentTodo = current;
-      }
-    );
-  }
-
-  ngOnDestroy(): void {
-    this.selectSubscription.unsubscribe();
-  }
-
-  todoSelected(todo: TodosEntity) {
-    this.todoFacade.selectTodo(todo);
   }
 
   toggleTodoDone(todo: TodosEntity): void {
     this.todoFacade.toggleTodoDone(todo);
-  }
-
-  openAddForm(): void {
-    this.todoFacade.selectTodo(null);
   }
 
   addTodo(todo: TodosEntity): void {
