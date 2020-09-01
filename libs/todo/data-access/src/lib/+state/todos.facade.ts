@@ -36,11 +36,12 @@ export class TodosFacade {
     this.store.dispatch(TodosActions.toggleDone({todo: todo}));
   }
 
-  editCurrentTodo(patch: Partial<TodosEntity>): void {
-    this.store.dispatch(TodosActions.editCurrentTodo({patch: patch}));
+  removeTodo(todo: TodosEntity): void {
+    this.store.dispatch(TodosActions.removeTodo({todo: todo}));
   }
 
-  removeCurrentTodo(): void {
-    this.store.dispatch(TodosActions.removeCurrentTodo());
+  editTodo(todo: TodosEntity, patch: Partial<TodosEntity>): void {
+    console.log(todo);
+    this.store.dispatch(TodosActions.editTodo({todo: todo, patch: patch}));
   }
 }

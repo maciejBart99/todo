@@ -1,8 +1,11 @@
-<mat-grid-list *ngIf="todos && todos.length >= 1; else empty" cols="1" rowHeight="2:1">
+<mat-grid-list *ngIf="todos && todos.length >= 1; else empty" cols="1" rowHeight="3:2">
   <mat-grid-tile *ngFor="let todo of todos">
     <todo-application-todo-preview-item
                                         [todo]="todo" (click)="selectTodo.emit(todo)"
-                                        (toggledDone)="toggledDone.emit(todo)">
+                                        (toggledDone)="toggledDone.emit(todo)"
+                                        (remove)="removeTodo.emit(todo)"
+                                        (edit)="editTodo.emit({patch: $event, todo: todo})"
+    >
     </todo-application-todo-preview-item>
   </mat-grid-tile>
 </mat-grid-list>

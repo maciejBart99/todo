@@ -5,6 +5,12 @@
   cursor: pointer;
 }
 
+textarea {
+  resize: none;
+  max-height: 6em;
+  overflow: auto;
+}
+
 :host:hover {
   box-shadow: 2px 2px 2px 2px rgba(200, 200, 200, 0.8);
 }
