@@ -1,0 +1,31 @@
+<todo-application-todo-header></todo-application-todo-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6 p-1">
+      <h4>Not Done:</h4>
+      <todo-application-todo-list [todos]="todosNotDone$ | async"
+                                  (selectTodo)="todoSelected($event)"
+                                  (toggledDone)="toggleTodoDone($event)"></todo-application-todo-list>
+      <h4>Done:</h4>
+      <todo-application-todo-list [todos]="todosDone$ | async"
+                                  (selectTodo)="todoSelected($event)"
+                                  (toggledDone)="toggleTodoDone($event)"></todo-application-todo-list>
+    </div>
+    <div class="col-12 col-md-6 p-1">
+      <ng-container *ngIf="currentTodo; else addForm">
+        <div>
+          <button mat-raised-button color="primary" class="mb-2" (click)="openAddForm()">Add new +</button>
+        </div>
+        <todo-application-todo-edit [todo]="currentTodo"
+                                    (edit)="editCurrent($event)"
+                                    (remove)="removeCurrent()"
+                                    class="w-100"
+        ></todo-application-todo-edit>
+      </ng-container>
+      <ng-template #addForm>
+        <todo-application-todo-add (add)="addTodo($event)" class="w-100"></todo-application-todo-add>
+      </ng-template>
+    </div>
+  </div>
+</div>
+<todo-application-todo-loading [showLoading]="!(loaded$ | async)"></todo-application-todo-loading>

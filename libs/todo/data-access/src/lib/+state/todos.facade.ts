@@ -1,0 +1,46 @@
+import { Injectable } from '@angular/core';
+
+import { select, Store, Action } from '@ngrx/store';
+
+import * as fromTodos from './todos.reducer';
+import * as TodosActions from './todos.actions';
+import * as TodosSelectors from './todos.selectors';
+import { TodosEntity } from './todos.models';
+
+@Injectable()
+export class TodosFacade {
+  loaded$ = this.store.pipe(select(TodosSelectors.getTodosLoaded));
+  allDone$ = this.store.pipe(select(TodosSelectors.getAllDone));
+  allNotDone$ = this.store.pipe(select(TodosSelectors.getAllNotDone));
+  selectedTodos$ = this.store.pipe(select(TodosSelectors.getSelected));
+
+  constructor(private store: Store<fromTodos.TodosPartialState>) {}
+
+  dispatch(action: Action) {
+    this.store.dispatch(action);
+  }
+
+  selectTodo(todo: TodosEntity): void {
+    this.store.dispatch(TodosActions.todoSelected({todo: todo}));
+  }
+
+  loadTodos(): void {
+    this.store.dispatch(TodosActions.loadTodos());
+  }
+
+  addTodo(todo: TodosEntity): void {
+    this.store.dispatch(TodosActions.addTodo({todo: todo}));
+  }
+
+  toggleTodoDone(todo: TodosEntity): void {
+    this.store.dispatch(TodosActions.toggleDone({todo: todo}));
+  }
+
+  editCurrentTodo(patch: Partial<TodosEntity>): void {
+    this.store.dispatch(TodosActions.editCurrentTodo({patch: patch}));
+  }
+
+  removeCurrentTodo(): void {
+    this.store.dispatch(TodosActions.removeCurrentTodo());
+  }
+}

@@ -1,0 +1,11 @@
+<mat-grid-list *ngIf="todos && todos.length >= 1; else empty" cols="1" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let todo of todos">
+    <todo-application-todo-preview-item
+                                        [todo]="todo" (click)="selectTodo.emit(todo)"
+                                        (toggledDone)="toggledDone.emit(todo)">
+    </todo-application-todo-preview-item>
+  </mat-grid-tile>
+</mat-grid-list>
+<ng-template #empty>
+  <h5 class="text-center">Nothing to show</h5>
+</ng-template>
