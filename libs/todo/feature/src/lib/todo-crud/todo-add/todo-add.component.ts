@@ -1,6 +1,7 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { TodosEntity } from '@todo-application/todo/data-access';
 import { UUID } from 'angular2-uuid';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'todo-application-todo-add',
@@ -9,7 +10,10 @@ import { UUID } from 'angular2-uuid';
 export class TodoAddComponent {
   @Output() add: EventEmitter<TodosEntity> = new EventEmitter<TodosEntity>();
 
-  addTodo(content: string): void {
-    this.add.emit({content: content, id: UUID.UUID(), done: false})
+  control = new FormControl('');
+
+  addTodo(): void {
+    this.add.emit({content: this.control.value, id: UUID.UUID(), done: false});
+    this.control.reset();
   }
 }

@@ -7,7 +7,6 @@ import { TodosEntity } from './todos.models';
 export const TODOS_FEATURE_KEY = 'todos';
 
 export interface State extends EntityState<TodosEntity> {
-  selectedId?: string | number; // which Todos record has been selected
   loaded: boolean; // has the Todos list been loaded
 }
 
@@ -40,9 +39,6 @@ const todosReducer = createReducer(
   ),
   on(TodosActions.removeTodoSuccess, (state, { todo}) =>
     todosAdapter.removeOne(todo.id, { ...state }))
-  ,on(TodosActions.todoSelected, (state, { todo}) =>
-    ({...state, selectedId: todo?.id})
-  )
 );
 
 export function reducer(state: State | undefined, action: Action) {

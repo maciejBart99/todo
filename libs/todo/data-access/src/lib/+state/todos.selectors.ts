@@ -34,14 +34,3 @@ export const getAllNotDone = createSelector(getAllTodos, (todos: TodosEntity[]) 
 export const getTodosEntities = createSelector(getTodosState, (state: State) =>
   selectEntities(state)
 );
-
-export const getSelectedId = createSelector(
-  getTodosState,
-  (state: State) => state.selectedId
-);
-
-export const getSelected = createSelector(
-  getTodosEntities,
-  getSelectedId,
-  (entities, selectedId) => selectedId && entities[selectedId]
-);

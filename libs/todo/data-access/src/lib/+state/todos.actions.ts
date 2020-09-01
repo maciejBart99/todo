@@ -31,11 +31,6 @@ export const editTodo = createAction(
   props<{ todo: TodosEntity, patch: Partial<TodosEntity> }>(),
 );
 
-export const editCurrentTodo = createAction(
-  '[Todos] Edit current todo',
-  props<{ patch: Partial<TodosEntity> }>(),
-);
-
 export const editTodoSuccess = createAction(
   '[Todos] Edit todo success',
   props<{ todo: TodosEntity, patch: Partial<TodosEntity> }>()
@@ -43,10 +38,6 @@ export const editTodoSuccess = createAction(
 
 export const editTodoFailure = createAction(
   '[Todos] Edit todo failure'
-);
-
-export const removeCurrentTodo = createAction(
-  '[Todos] Remove current todo'
 );
 
 export const removeTodo = createAction(
@@ -66,9 +57,4 @@ export const removeTodoError = createAction(
 export const toggleDone = createAction(
   '[Todos] Toggle done',
   props<{ todo: TodosEntity }>()
-);
-
-export const todoSelected = createAction(
-  '[Todos] Todo selected',
-  props<{todo: TodosEntity}>()
 );
