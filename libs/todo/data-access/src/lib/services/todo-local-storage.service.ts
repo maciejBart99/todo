@@ -5,7 +5,7 @@ import { TodosEntity } from '@todo-application/todo/data-access';
 import { TodoDataService } from './todo-data.service';
 
 @Injectable()
-export class TodoLocalStorageService extends TodoDataService {
+export class TodoLocalStorageService implements TodoDataService {
   private readonly featureKey = 'todos';
 
   getAllTodos(): Observable<TodosEntity[]> {
