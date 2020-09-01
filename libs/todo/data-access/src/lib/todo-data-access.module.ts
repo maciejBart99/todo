@@ -8,6 +8,7 @@ import { TodosFacade } from './+state/todos.facade';
 import { TodoDataService } from './services/todo-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoLocalStorageService } from './services/todo-local-storage.service';
+import { TodoRestService } from './services/todo-rest.service';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { TodoLocalStorageService } from './services/todo-local-storage.service';
     StoreModule.forFeature(fromTodos.TODOS_FEATURE_KEY, fromTodos.reducer),
     EffectsModule.forFeature([TodosEffects]),
   ],
-  providers: [TodosFacade, {provide: TodoDataService, useClass: TodoLocalStorageService}],
+  providers: [TodosFacade, {provide: TodoDataService, useClass: TodoRestService}],
 })
 export class TodoDataAccessModule {}
