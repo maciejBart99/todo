@@ -5,14 +5,12 @@ import { TodosEntity } from '../+state/todos.models';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class TodoRestService extends TodoDataService {
+export class TodoRestService implements TodoDataService {
 
   private readonly resourceUrl = 'todos';
   private readonly headers = {'Content-Type': 'application/json'};
 
-  constructor(private http: HttpClient) {
-    super();
-  }
+  constructor(private http: HttpClient) {}
 
   getAllTodos(): Observable<TodosEntity[]> {
       return this.http.get<TodosEntity[]>(this.resourceUrl);
