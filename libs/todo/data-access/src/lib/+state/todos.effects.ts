@@ -7,6 +7,7 @@ import { TodoLocalStorageService } from '../services/todo-local-storage.service'
 import { delay, map} from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromTodos from './todos.reducer';
+import { TodoDataService } from '../services/todo-data.service';
 
 @Injectable()
 export class TodosEffects {
@@ -97,5 +98,5 @@ export class TodosEffects {
 
   constructor(private actions$: Actions,
               private store: Store<fromTodos.TodosPartialState>,
-              private todosService: TodoLocalStorageService) {}
+              private todosService: TodoDataService) {}
 }

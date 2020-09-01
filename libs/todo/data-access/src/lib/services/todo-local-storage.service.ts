@@ -2,11 +2,10 @@ import { Injectable } from '@angular/core';
 import { from, Observable, of } from 'rxjs';
 import { filter, map, switchMap, tap, toArray } from 'rxjs/operators';
 import { TodosEntity } from '@todo-application/todo/data-access';
+import { TodoDataService } from './todo-data.service';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class TodoLocalStorageService {
+@Injectable()
+export class TodoLocalStorageService extends TodoDataService {
   private readonly featureKey = 'todos';
 
   getAllTodos(): Observable<TodosEntity[]> {
