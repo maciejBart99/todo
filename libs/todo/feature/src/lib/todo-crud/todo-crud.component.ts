@@ -54,12 +54,12 @@ export class TodoCrudComponent implements OnInit, OnDestroy {
     this.todoFacade.addTodo(todo);
   }
 
-  removeCurrent(): void {
-    this.todoFacade.removeCurrentTodo();
+  removeTodo(todo: TodosEntity): void {
+    this.todoFacade.removeTodo(todo);
   }
 
-  editCurrent(patch: Partial<TodosEntity>): void {
-    this.todoFacade.editCurrentTodo(patch);
+  editTodo(patch: Partial<TodosEntity>, todo: TodosEntity): void {
+    this.todoFacade.editTodo(todo, patch);
   }
 
 }
