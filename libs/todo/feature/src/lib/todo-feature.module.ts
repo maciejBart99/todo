@@ -14,7 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TodoHeaderComponent } from './todo-crud/todo-header/todo-header.component';
-import { TodoLoadingComponent } from './todo-crud/todo-loading/todo-loading/todo-loading.component';
+import { TodoLoadingComponent } from './todo-crud/todo-loading/todo-loading.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
