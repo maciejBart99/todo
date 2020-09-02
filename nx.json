@@ -23,10 +23,10 @@
   },
   "projects": {
     "todo": {
-      "tags": []
+      "tags": ["type:application"]
     },
     "todo-e2e": {
-      "tags": [],
+      "tags": ["type:application"],
       "implicitDependencies": ["todo"]
     },
     "todo-regular-feature": {
