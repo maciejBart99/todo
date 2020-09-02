@@ -126,29 +126,29 @@
         }
       }
     },
-    "todo-data-access": {
+    "todo-regular-feature": {
       "projectType": "library",
-      "root": "libs/todo/data-access",
-      "sourceRoot": "libs/todo/data-access/src",
+      "root": "libs/todo/regular/feature",
+      "sourceRoot": "libs/todo/regular/feature/src",
       "prefix": "todo-application",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/todo/data-access/tsconfig.lib.json",
-              "libs/todo/data-access/tsconfig.spec.json"
+              "libs/todo/regular/feature/tsconfig.lib.json",
+              "libs/todo/regular/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/todo/data-access/**/*"]
+            "exclude": ["**/node_modules/**", "!libs/todo/regular/feature/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/todo/data-access/jest.config.js",
-            "tsConfig": "libs/todo/data-access/tsconfig.spec.json",
+            "jestConfig": "libs/todo/regular/feature/jest.config.js",
+            "tsConfig": "libs/todo/regular/feature/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/todo/data-access/src/test-setup.ts"
+            "setupFile": "libs/todo/regular/feature/src/test-setup.ts"
           }
         }
       },
@@ -158,29 +158,195 @@
         }
       }
     },
-    "todo-feature": {
+    "todo-urgent-feature": {
       "projectType": "library",
-      "root": "libs/todo/feature",
-      "sourceRoot": "libs/todo/feature/src",
+      "root": "libs/todo/urgent/feature",
+      "sourceRoot": "libs/todo/urgent/feature/src",
       "prefix": "todo-application",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/todo/feature/tsconfig.lib.json",
-              "libs/todo/feature/tsconfig.spec.json"
+              "libs/todo/urgent/feature/tsconfig.lib.json",
+              "libs/todo/urgent/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/todo/feature/**/*"]
+            "exclude": ["**/node_modules/**", "!libs/todo/urgent/feature/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/todo/feature/jest.config.js",
-            "tsConfig": "libs/todo/feature/tsconfig.spec.json",
+            "jestConfig": "libs/todo/urgent/feature/jest.config.js",
+            "tsConfig": "libs/todo/urgent/feature/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/todo/feature/src/test-setup.ts"
+            "setupFile": "libs/todo/urgent/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "todo-urgent-data-access": {
+      "projectType": "library",
+      "root": "libs/todo/urgent/data-access",
+      "sourceRoot": "libs/todo/urgent/data-access/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todo/urgent/data-access/tsconfig.lib.json",
+              "libs/todo/urgent/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/todo/urgent/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todo/urgent/data-access/jest.config.js",
+            "tsConfig": "libs/todo/urgent/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/todo/urgent/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "todo-regular-data-access": {
+      "projectType": "library",
+      "root": "libs/todo/regular/data-access",
+      "sourceRoot": "libs/todo/regular/data-access/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todo/regular/data-access/tsconfig.lib.json",
+              "libs/todo/regular/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/todo/regular/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todo/regular/data-access/jest.config.js",
+            "tsConfig": "libs/todo/regular/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/todo/regular/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "todo-domain": {
+      "projectType": "library",
+      "root": "libs/todo/domain",
+      "sourceRoot": "libs/todo/domain/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todo/domain/tsconfig.lib.json",
+              "libs/todo/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/todo/domain/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todo/domain/jest.config.js",
+            "tsConfig": "libs/todo/domain/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/todo/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "todo-shell": {
+      "projectType": "library",
+      "root": "libs/todo/shell",
+      "sourceRoot": "libs/todo/shell/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todo/shell/tsconfig.lib.json",
+              "libs/todo/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/todo/shell/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todo/shell/jest.config.js",
+            "tsConfig": "libs/todo/shell/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/todo/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "todo-ui": {
+      "projectType": "library",
+      "root": "libs/todo/ui",
+      "sourceRoot": "libs/todo/ui/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todo/ui/tsconfig.lib.json",
+              "libs/todo/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/todo/ui/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todo/ui/jest.config.js",
+            "tsConfig": "libs/todo/ui/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/todo/ui/src/test-setup.ts"
           }
         }
       },

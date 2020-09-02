@@ -29,11 +29,26 @@
       "tags": [],
       "implicitDependencies": ["todo"]
     },
-    "todo-data-access": {
-      "tags": ["scope:todo", "type:data-access"]
+    "todo-regular-feature": {
+      "tags": ["scope:todo-regular", "type:feature"]
     },
-    "todo-feature": {
-      "tags": ["scope:todo", "type:feature"]
+    "todo-urgent-feature": {
+      "tags": ["scope:todo-urgent", "type:feature"]
+    },
+    "todo-urgent-data-access": {
+      "tags": ["scope:todo-urgent", "type:data-access"]
+    },
+    "todo-regular-data-access": {
+      "tags": ["scope:todo-regular", "type:data-access"]
+    },
+    "todo-domain": {
+      "tags": ["scope:todo", "type:domain"]
+    },
+    "todo-shell": {
+      "tags": ["scope:todo", "type:shell"]
+    },
+    "todo-ui": {
+      "tags": ["scope:todo", "type:ui"]
     }
   }
 }
