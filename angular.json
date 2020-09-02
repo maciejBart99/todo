@@ -355,6 +355,134 @@
           "style": "scss"
         }
       }
+    },
+    "auth-data-access": {
+      "projectType": "library",
+      "root": "libs/auth/data-access",
+      "sourceRoot": "libs/auth/data-access/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/data-access/tsconfig.lib.json",
+              "libs/auth/data-access/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/auth/data-access/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/data-access/jest.config.js",
+            "tsConfig": "libs/auth/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/auth/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "auth-public": {
+      "projectType": "library",
+      "root": "libs/auth/public",
+      "sourceRoot": "libs/auth/public/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/public/tsconfig.lib.json",
+              "libs/auth/public/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/auth/public/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/public/jest.config.js",
+            "tsConfig": "libs/auth/public/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/auth/public/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-domain": {
+      "projectType": "library",
+      "root": "libs/shared/domain",
+      "sourceRoot": "libs/shared/domain/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/domain/tsconfig.lib.json",
+              "libs/shared/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/domain/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/domain/jest.config.js",
+            "tsConfig": "libs/shared/domain/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-ui-user-bar": {
+      "projectType": "library",
+      "root": "libs/shared/ui-user-bar",
+      "sourceRoot": "libs/shared/ui-user-bar/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui-user-bar/tsconfig.lib.json",
+              "libs/shared/ui-user-bar/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui-user-bar/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui-user-bar/jest.config.js",
+            "tsConfig": "libs/shared/ui-user-bar/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/ui-user-bar/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
