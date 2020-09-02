@@ -60,6 +60,26 @@
         "allow": [],
         "depConstraints": [
           {
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": ["type:ui", "type:domain"]
+          },
+          {
+            "sourceTag": "type:domain",
+            "onlyDependOnLibsWithTags": ["type:domain"]
+          },
+          {
+            "sourceTag": "type:shell",
+            "onlyDependOnLibsWithTags": ["type:feature"]
+          },
+          {
+            "sourceTag": "type:feature",
+            "onlyDependOnLibsWithTags": ["type:data-access", "type:ui", "type:domain"]
+          },
+          {
+            "sourceTag": "type:application",
+            "onlyDependOnLibsWithTags": ["type:shell"]
+          },
+          {
             "sourceTag": "*",
             "onlyDependOnLibsWithTags": ["*"]
           }
