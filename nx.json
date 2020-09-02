@@ -49,6 +49,18 @@
     },
     "todo-ui": {
       "tags": ["scope:todo", "type:ui"]
+    },
+    "auth-data-access": {
+      "tags": ["scope:auth", "type:data-access"]
+    },
+    "auth-public": {
+      "tags": ["scope:auth", "type:public"]
+    },
+    "shared-domain": {
+      "tags": ["scope:shared", "type:domain"]
+    },
+    "shared-ui-user-bar": {
+      "tags": ["scope:shared", "type:ui"]
     }
   }
 }
