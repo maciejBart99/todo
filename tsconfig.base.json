@@ -16,10 +16,21 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@todo-application/todo/data-access": [
-        "libs/todo/data-access/src/index.ts"
+      "@todo-application/todo/regular/feature": [
+        "libs/todo/regular/feature/src/index.ts"
       ],
-      "@todo-application/todo/feature": ["libs/todo/feature/src/index.ts"]
+      "@todo-application/todo/urgent/feature": [
+        "libs/todo/urgent/feature/src/index.ts"
+      ],
+      "@todo-application/todo/urgent/data-access": [
+        "libs/todo/urgent/data-access/src/index.ts"
+      ],
+      "@todo-application/todo/regular/data-access": [
+        "libs/todo/regular/data-access/src/index.ts"
+      ],
+      "@todo-application/todo/domain": ["libs/todo/domain/src/index.ts"],
+      "@todo-application/todo/shell": ["libs/todo/shell/src/index.ts"],
+      "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

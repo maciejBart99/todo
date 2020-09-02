@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h1>Urgent to-dos</h1>
+      <todo-application-todo-add (add)="addTodo($event)" class="w-100"></todo-application-todo-add>
+    </div>
+    <div class="col-12 mt-3">
+      <h2>Tasks</h2>
+    </div>
+    <div class="col-12 col-md-6">
+      <h4>Not Done:</h4>
+      <todo-application-todo-list [todos]="todosNotDone$ | async"
+                                  (removeTodo)="removeTodo($event)"
+                                  (editTodo)="editTodo($event.patch, $event.todo)"
+                                  (toggledDone)="toggleTodoDone($event)"></todo-application-todo-list>
+    </div>
+    <div class="col-12 col-md-6">
+      <h4>Done:</h4>
+      <todo-application-todo-list [todos]="todosDone$ | async"
+                                  (removeTodo)="removeTodo($event)"
+                                  (editTodo)="editTodo($event.patch, $event.todo)"
+                                  (toggledDone)="toggleTodoDone($event)"></todo-application-todo-list>
+    </div>
+  </div>
+</div>
+<todo-application-todo-loading [showLoading]="!(loaded$ | async)"></todo-application-todo-loading>
