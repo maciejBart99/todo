@@ -1,0 +1,6 @@
+{
+  "/user/:userId/todos-urgent": "/todos-urgent?ownerId=:userId",
+  "/user/:userId/todos-urgent/:id": "/todos-urgent/:id",
+  "/user/:userId/todos-regular": "/todos-regular?ownerId=:userId",
+  "/user/:userId/todos-regular/:id": "/todos-regular/:id"
+}
