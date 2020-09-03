@@ -42,7 +42,8 @@
       "@todo-application/shared/ui-header": [
         "libs/shared/ui-header/src/index.ts"
       ],
-      "@todo-application/auth/shell": ["libs/auth/shell/src/index.ts"]
+      "@todo-application/auth/shell": ["libs/auth/shell/src/index.ts"],
+      "@todo-application/main/core": ["libs/main/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
