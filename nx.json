@@ -67,6 +67,9 @@
     },
     "auth-shell": {
       "tags": ["scope:auth", "type:shell"]
+    },
+    "main-core": {
+      "tags": ["scope:main", "type:core"]
     }
   }
 }

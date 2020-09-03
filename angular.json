@@ -547,6 +547,38 @@
           "style": "scss"
         }
       }
+    },
+    "main-core": {
+      "projectType": "library",
+      "root": "libs/main/core",
+      "sourceRoot": "libs/main/core/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/main/core/tsconfig.lib.json",
+              "libs/main/core/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/main/core/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/main/core/jest.config.js",
+            "tsConfig": "libs/main/core/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/main/core/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
