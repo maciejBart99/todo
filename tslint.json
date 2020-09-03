@@ -73,7 +73,11 @@
           },
           {
             "sourceTag": "type:feature",
-            "onlyDependOnLibsWithTags": ["type:data-access", "type:ui", "type:domain"]
+            "onlyDependOnLibsWithTags": [
+              "type:data-access",
+              "type:ui",
+              "type:domain"
+            ]
           },
           {
             "sourceTag": "type:application",
