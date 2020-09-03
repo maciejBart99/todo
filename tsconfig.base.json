@@ -30,7 +30,19 @@
       ],
       "@todo-application/todo/domain": ["libs/todo/domain/src/index.ts"],
       "@todo-application/todo/shell": ["libs/todo/shell/src/index.ts"],
-      "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"]
+      "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"],
+      "@todo-application/auth/data-access": [
+        "libs/auth/data-access/src/index.ts"
+      ],
+      "@todo-application/auth/public": ["libs/auth/public/src/index.ts"],
+      "@todo-application/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@todo-application/shared/ui-user-bar": [
+        "libs/shared/ui-user-bar/src/index.ts"
+      ],
+      "@todo-application/shared/ui-header": [
+        "libs/shared/ui-header/src/index.ts"
+      ],
+      "@todo-application/auth/shell": ["libs/auth/shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -7,9 +7,14 @@ import { delay, map, switchMap, take } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromTodos from './todos.reducer';
 import { TodoDataService } from '../services/todo-data.service';
+import { AuthFacadeService } from '@todo-application/auth/public';
 
 @Injectable()
 export class TodosEffects {
+  setUser$ = createEffect(() => this.authFacade.getCurrentUser().pipe(
+    map(_ => TodosActions.loadTodos())
+  ));
+
   loadTodos$ = createEffect(() =>
     this.actions$.pipe(
       ofType(TodosActions.loadTodos),
@@ -73,6 +78,7 @@ export class TodosEffects {
           );
         },
         onError: (action, error) => {
+          console.log(error);
           return TodosActions.addTodoFailure();
         },
       })
@@ -97,5 +103,6 @@ export class TodosEffects {
 
   constructor(private actions$: Actions,
               private store: Store<fromTodos.TodosPartialState>,
-              private todosService: TodoDataService) {}
+              private todosService: TodoDataService,
+              private authFacade: AuthFacadeService) {}
 }

@@ -8,10 +8,11 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { TodoShellModule } from '@todo-application/todo/shell';
 import { RouterModule } from '@angular/router';
+import { AuthShellModule } from '@todo-application/auth/shell';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot([]), StoreModule.forRoot({}), TodoShellModule, EffectsModule.forRoot([]), StoreDevtoolsModule.instrument({
+  imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot([]), StoreModule.forRoot({}), TodoShellModule, AuthShellModule, EffectsModule.forRoot([]), StoreDevtoolsModule.instrument({
     maxAge: 25
   })],
   providers: [],
