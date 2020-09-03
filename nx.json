@@ -61,6 +61,12 @@
     },
     "shared-ui-user-bar": {
       "tags": ["scope:shared", "type:ui"]
+    },
+    "shared-ui-header": {
+      "tags": ["scope:shared", "type:ui"]
+    },
+    "auth-shell": {
+      "tags": ["scope:auth", "type:shell"]
     }
   }
 }
