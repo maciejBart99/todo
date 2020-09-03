@@ -29,9 +29,10 @@ const todosReducer = createReducer(
     ...state,
     loaded: false
   })),
-  on(TodosActions.loadTodosSuccess, (state, { todos }) =>
-    todosAdapter.addMany(todos, { ...state, loaded: true })
-  ),
+  on(TodosActions.loadTodosSuccess, (state, { todos }) => {
+    state = todosAdapter.removeAll({ ...state, loaded: true });
+    return todosAdapter.addMany(todos, state);
+  }),
   on(TodosActions.addTodoSuccess, (state, { todo }) =>
     todosAdapter.addOne(todo, { ...state })
   ),

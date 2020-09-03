@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { TodosEntity } from '@todo-application/todo/domain';
 import { AuthFacadeService } from '@todo-application/auth/public';
-import { map, switchMap, take } from 'rxjs/operators';
+import { map, switchMap, take, withLatestFrom } from 'rxjs/operators';
 
 @Injectable()
 export class TodoRestService implements TodoDataService {
@@ -17,7 +17,8 @@ export class TodoRestService implements TodoDataService {
     return this.getResourceUrlBase().pipe(switchMap(url => this.http.get<TodosEntity[]>(url)));
   }
   addTodo(newTodo: TodosEntity) {
-    return this.getResourceUrlBase().pipe(switchMap(url => this.http.post<TodosEntity>(url, newTodo)));
+    return this.getResourceUrlBase().pipe(withLatestFrom(this.authService.getCurrentUser()),
+      switchMap(([url, user]) => this.http.post<TodosEntity>(url, {...newTodo, ownerId: user?.id})));
   }
   editTodo(entity: TodosEntity, patch: Partial<TodosEntity>): Observable<any> {
     return this.getResourceUrlBase().pipe(switchMap(url => this.http.patch<TodosEntity>(`${url}/${entity.id}`, patch)));

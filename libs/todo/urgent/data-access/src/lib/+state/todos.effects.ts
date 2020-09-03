@@ -78,6 +78,7 @@ export class TodosEffects {
           );
         },
         onError: (action, error) => {
+          console.log(error);
           return TodosActions.addTodoFailure();
         },
       })
