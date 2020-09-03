@@ -38,7 +38,11 @@
       "@todo-application/shared/domain": ["libs/shared/domain/src/index.ts"],
       "@todo-application/shared/ui-user-bar": [
         "libs/shared/ui-user-bar/src/index.ts"
-      ]
+      ],
+      "@todo-application/shared/ui-header": [
+        "libs/shared/ui-header/src/index.ts"
+      ],
+      "@todo-application/auth/shell": ["libs/auth/shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

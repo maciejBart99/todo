@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { UserModel } from '@todo-application/shared/domain';
 
 @Component({
@@ -8,4 +8,6 @@ import { UserModel } from '@todo-application/shared/domain';
 })
 export class UserBarComponent {
   @Input() user: UserModel;
+  @Output() logIn: EventEmitter<void> = new EventEmitter<void>();
+  @Output() logOut: EventEmitter<void> = new EventEmitter<void>();
 }

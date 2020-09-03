@@ -1,19 +1,33 @@
 import { Injectable } from '@angular/core';
-import { UserService } from '@todo-application/auth/data-access';
 import { UserModel } from '@todo-application/shared/domain';
+import { AuthFacade } from '@todo-application/auth/data-access';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthFacadeService {
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: AuthFacade) { }
 
-  getCurrentUser(): UserModel {
-    return this.userService.getUser();
+  getCurrentUser(): Observable<UserModel> {
+    return this.userService.user$;
   }
 
-  getIsAuthenticated(): boolean {
-    return this.getCurrentUser() != null;
+  getIsAuthenticated(): Observable<boolean> {
+    return this.getCurrentUser().pipe(map(user => user != null));
+  }
+
+  logIn(): void {
+    this.userService.logIn({
+      id: 'xxx',
+      firstName: 'Maciej',
+      lastName: 'Lukasik'
+    });
+  }
+
+  logOut(): void {
+    this.userService.logOut();
   }
 }

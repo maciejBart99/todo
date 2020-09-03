@@ -483,6 +483,70 @@
           "style": "scss"
         }
       }
+    },
+    "shared-ui-header": {
+      "projectType": "library",
+      "root": "libs/shared/ui-header",
+      "sourceRoot": "libs/shared/ui-header/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui-header/tsconfig.lib.json",
+              "libs/shared/ui-header/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui-header/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui-header/jest.config.js",
+            "tsConfig": "libs/shared/ui-header/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/ui-header/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "auth-shell": {
+      "projectType": "library",
+      "root": "libs/auth/shell",
+      "sourceRoot": "libs/auth/shell/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/shell/tsconfig.lib.json",
+              "libs/auth/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/auth/shell/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/shell/jest.config.js",
+            "tsConfig": "libs/auth/shell/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/auth/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
