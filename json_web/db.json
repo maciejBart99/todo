@@ -12,5 +12,11 @@
       "ownerId": "xxx"
     }
   ],
-  "todos-regular": []
+  "todos-regular": [
+    {
+      "content": "Task 1",
+      "id": "4ab5e4df-3274-8c74-a7a4-ee34facc09c6",
+      "done": false
+    }
+  ]
 }

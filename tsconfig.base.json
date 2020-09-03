@@ -16,33 +16,49 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@todo-application/todo/regular/feature": [
-        "libs/todo/regular/feature/src/index.ts"
+      "@todo-application/todo-app/auth/data-access": [
+        "libs/todo-app/auth/data-access/src/index.ts"
       ],
-      "@todo-application/todo/urgent/feature": [
-        "libs/todo/urgent/feature/src/index.ts"
+      "@todo-application/todo-app/auth/shell": [
+        "libs/todo-app/auth/shell/src/index.ts"
       ],
-      "@todo-application/todo/urgent/data-access": [
-        "libs/todo/urgent/data-access/src/index.ts"
+      "@todo-application/todo-app/auth/public": [
+        "libs/todo-app/auth/public/src/index.ts"
       ],
-      "@todo-application/todo/regular/data-access": [
-        "libs/todo/regular/data-access/src/index.ts"
+      "@todo-application/todo-app/shared/domain": [
+        "libs/todo-app/shared/domain/src/index.ts"
       ],
-      "@todo-application/todo/domain": ["libs/todo/domain/src/index.ts"],
-      "@todo-application/todo/shell": ["libs/todo/shell/src/index.ts"],
-      "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"],
-      "@todo-application/auth/data-access": [
-        "libs/auth/data-access/src/index.ts"
+      "@todo-application/todo-app/shared/ui-header": [
+        "libs/todo-app/shared/ui-header/src/index.ts"
       ],
-      "@todo-application/auth/public": ["libs/auth/public/src/index.ts"],
-      "@todo-application/shared/domain": ["libs/shared/domain/src/index.ts"],
-      "@todo-application/shared/ui-user-bar": [
-        "libs/shared/ui-user-bar/src/index.ts"
+      "@todo-application/todo-app/shared/ui-user-bar": [
+        "libs/todo-app/shared/ui-user-bar/src/index.ts"
       ],
-      "@todo-application/shared/ui-header": [
-        "libs/shared/ui-header/src/index.ts"
+      "@todo-application/todo-app/main/shell": [
+        "libs/todo-app/main/shell/src/index.ts"
       ],
-      "@todo-application/auth/shell": ["libs/auth/shell/src/index.ts"]
+      "@todo-application/todo-app/todo/domain": [
+        "libs/todo-app/todo/domain/src/index.ts"
+      ],
+      "@todo-application/todo-app/todo/shell": [
+        "libs/todo-app/todo/shell/src/index.ts"
+      ],
+      "@todo-application/todo-app/todo/ui": [
+        "libs/todo-app/todo/ui/src/index.ts"
+      ],
+      "@todo-application/todo-app/todo/regular/data-access": [
+        "libs/todo-app/todo/regular/data-access/src/index.ts"
+      ],
+      "@todo-application/todo-app/todo/urgent/data-access": [
+        "libs/todo-app/todo/urgent/data-access/src/index.ts"
+      ],
+      "@todo-application/todo-app/todo/urgent/feature": [
+        "libs/todo-app/todo/urgent/feature/src/index.ts"
+      ],
+      "@todo-application/todo-app/todo/regular/feature": [
+        "libs/todo-app/todo/regular/feature/src/index.ts"
+      ],
+      "@todo-application/todo-app/core": ["libs/todo-app/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
