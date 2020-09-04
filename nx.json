@@ -73,12 +73,6 @@
         "type:ui"
       ]
     },
-    "shared-ui-user-bar": {
-      "tags": [
-        "scope:todo-app-shared",
-        "type:ui"
-      ]
-    },
     "todo-domain": {
       "tags": [
         "scope:todo-app-todo",
@@ -215,6 +209,12 @@
       "tags": [
         "scope:todo-app-mobile-main",
         "type:shell"
+      ]
+    },
+    "auth-ui-user-bar": {
+      "tags": [
+        "scope:todo-app-shared",
+        "type:ui"
       ]
     }
   }

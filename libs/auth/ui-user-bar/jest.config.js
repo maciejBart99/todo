@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'shared-ui-user-bar',
+  name: 'auth-ui-user-bar',
   preset: '../../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {

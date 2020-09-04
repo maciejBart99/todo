@@ -8,7 +8,7 @@ import { SharedUiHeaderModule } from '@todo-application/shared/ui-header';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
-import { SharedUiUserBarModule } from '@todo-application/shared/ui-user-bar';
+import { AuthUiUserBarModule } from '@todo-application/auth/ui-user-bar';
 import { AuthPublicModule } from '@todo-application/auth/public';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { AuthPublicModule } from '@todo-application/auth/public';
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
-    SharedUiUserBarModule,
+    AuthUiUserBarModule,
     RouterModule],
   declarations: [MainComponent],
   exports: [MainComponent]
