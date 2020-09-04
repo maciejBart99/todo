@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { TodoShellModule } from '@todo-application/todo/shell';
+import { TodoShellWebModule } from '@todo-application/todo/shell-web';
 import { AuthShellModule } from '@todo-application/auth/shell';
 import { MainComponent } from './main/main.component';
 import { SharedUiHeaderModule } from '@todo-application/shared/ui-header';
@@ -12,7 +12,7 @@ import { SharedUiUserBarModule } from '@todo-application/shared/ui-user-bar';
 
 @NgModule({
   imports: [CommonModule,
-    TodoShellModule,
+    TodoShellWebModule,
     AuthShellModule,
     SharedUiHeaderModule,
     MatButtonModule,

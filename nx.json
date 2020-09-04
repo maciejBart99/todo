@@ -57,9 +57,6 @@
     "todo-domain": {
       "tags": ["scope:todo-app-todo", "type:domain"]
     },
-    "todo-shell": {
-      "tags": ["scope:todo-app-todo", "type:shell"]
-    },
     "todo-ui": {
       "tags": ["scope:todo-app-todo", "type:ui"]
     },
@@ -104,6 +101,18 @@
     },
     "todo-regular-feature-mobile": {
       "tags": ["scope:todo-regular", "type:feature"]
+    },
+    "todo-regular-util-abstract-data-service": {
+      "tags": ["scope:todo-regular", "type:util"]
+    },
+    "todo-urgent-util-abstract-data-service": {
+      "tags": ["scope:todo-urgent", "type:util"]
+    },
+    "todo-shell-web": {
+      "tags": ["scope:todo-app-todo", "type:shell"]
+    },
+    "todo-shell-mobile": {
+      "tags": ["scope:todo", "type:shell"]
     }
   }
 }

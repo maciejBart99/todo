@@ -16,4 +16,4 @@ export const todoShellRoutes: Route[] = [
   declarations: [TodosComponent],
   exports: [TodosComponent]
 })
-export class TodoShellModule {}
+export class TodoShellWebModule {}

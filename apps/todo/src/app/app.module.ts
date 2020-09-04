@@ -10,8 +10,8 @@ import { TodoAppCoreModule } from '@todo-application/todo-app/core';
   declarations: [AppComponent],
   imports: [BrowserModule,
             BrowserAnimationsModule,
-            TodoAppCoreModule,
-            TodoAppMainShellModule],
+            TodoAppMainShellModule,
+              TodoAppCoreModule,],
   providers: [],
   bootstrap: [AppComponent],
 })

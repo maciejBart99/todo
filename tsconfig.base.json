@@ -27,7 +27,6 @@
         "libs/shared/ui-user-bar/src/index.ts"
       ],
       "@todo-application/todo/domain": ["libs/todo/domain/src/index.ts"],
-      "@todo-application/todo/shell": ["libs/todo/shell/src/index.ts"],
       "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"],
       "@todo-application/todo/regular/feature-web": [
         "libs/todo/regular/feature-web/src/index.ts"
@@ -70,6 +69,16 @@
       ],
       "@todo-application/todo/regular/feature-mobile": [
         "libs/todo/regular/feature-mobile/src/index.ts"
+      ],
+      "@todo-application/todo/regular/util-abstract-data-service": [
+        "libs/todo/regular/util-abstract-data-service/src/index.ts"
+      ],
+      "@todo-application/todo/urgent/util-abstract-data-service": [
+        "libs/todo/urgent/util-abstract-data-service/src/index.ts"
+      ],
+      "@todo-application/todo/shell-web": ["libs/todo/shell-web/src/index.ts"],
+      "@todo-application/todo/shell-mobile": [
+        "libs/todo/shell-mobile/src/index.ts"
       ]
     }
   },
