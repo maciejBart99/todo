@@ -33,9 +33,6 @@
       "@todo-application/shared/ui-header": [
         "libs/shared/ui-header/src/index.ts"
       ],
-      "@todo-application/shared/ui-user-bar": [
-        "libs/shared/ui-user-bar/src/index.ts"
-      ],
       "@todo-application/todo/domain": [
         "libs/todo/domain/src/index.ts"
       ],
@@ -104,6 +101,9 @@
       ],
       "@todo-application/todo-app-mobile/main/shell": [
         "libs/todo-app-mobile/main/shell/src/index.ts"
+      ],
+      "@todo-application/auth/ui-user-bar": [
+        "libs/auth/ui-user-bar/src/index.ts"
       ]
     }
   },

@@ -413,41 +413,6 @@
         }
       }
     },
-    "shared-ui-user-bar": {
-      "projectType": "library",
-      "root": "libs/shared/ui-user-bar",
-      "sourceRoot": "libs/shared/ui-user-bar/src",
-      "prefix": "todo-application",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/shared/ui-user-bar/tsconfig.lib.json",
-              "libs/shared/ui-user-bar/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shared/ui-user-bar/**/*"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/shared/ui-user-bar/jest.config.js",
-            "tsConfig": "libs/shared/ui-user-bar/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/shared/ui-user-bar/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      }
-    },
     "todo-domain": {
       "projectType": "library",
       "root": "libs/todo/domain",
@@ -1244,6 +1209,41 @@
             "tsConfig": "libs/todo-app-mobile/main/shell/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/todo-app-mobile/main/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "auth-ui-user-bar": {
+      "projectType": "library",
+      "root": "libs/auth/ui-user-bar",
+      "sourceRoot": "libs/auth/ui-user-bar/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/ui-user-bar/tsconfig.lib.json",
+              "libs/auth/ui-user-bar/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/auth/ui-user-bar/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/ui-user-bar/jest.config.js",
+            "tsConfig": "libs/auth/ui-user-bar/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/auth/ui-user-bar/src/test-setup.ts"
           }
         }
       },
