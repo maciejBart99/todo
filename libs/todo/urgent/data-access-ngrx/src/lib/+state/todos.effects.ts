@@ -6,12 +6,12 @@ import * as TodosActions from './todos.actions';
 import { delay, map, switchMap, take } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromTodos from './todos.reducer';
-import { AuthFacadeService } from '@todo-application/auth/public';
+import { PublicAuthFacadeService } from '@todo-application/auth/public';
 import { TodoDataService } from '@todo-application/todo/urgent/util-abstract-data-service';
 
 @Injectable()
 export class TodosEffects {
-  setUser$ = createEffect(() => this.authFacade.getCurrentUser().pipe(
+  setUser$ = createEffect(() => this.authFacade.getCurrentUserId().pipe(
     map(_ => TodosActions.loadTodos())
   ));
 
@@ -20,8 +20,7 @@ export class TodosEffects {
       ofType(TodosActions.loadTodos),
       fetch({
         run: (action) => {
-          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user => this.todosService.getAllTodos(user)),
-            delay(2000), // fake delay to show spinner
+          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user => this.todosService.getAllTodos(user)),
             map(todos => TodosActions.loadTodosSuccess({ todos: todos }))
           );
         },
@@ -37,7 +36,7 @@ export class TodosEffects {
       ofType(TodosActions.editTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, action.patch)),
+          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, action.patch)),
             map(_ => {
               return TodosActions.editTodoSuccess({todo: action.todo, patch: action.patch});
             })
@@ -55,7 +54,7 @@ export class TodosEffects {
       ofType(TodosActions.toggleDone),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, {done: !action.todo.done})),
+          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, {done: !action.todo.done})),
             map(_ => {
               return TodosActions.editTodoSuccess({todo: action.todo, patch: {done: !action.todo.done}});
             })
@@ -73,7 +72,7 @@ export class TodosEffects {
       ofType(TodosActions.addTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.addTodo(user, action.todo)),
+          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.addTodo(user, action.todo)),
             map(_ => TodosActions.addTodoSuccess({todo: action.todo}))
           );
         },
@@ -89,7 +88,7 @@ export class TodosEffects {
       ofType(TodosActions.removeTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.removeTodo(user, action.todo)),
+          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.removeTodo(user, action.todo)),
             map(_ => TodosActions.removeTodoSuccess({todo: action.todo}))
           );
         },
@@ -103,5 +102,5 @@ export class TodosEffects {
   constructor(private actions$: Actions,
               private store: Store<fromTodos.TodosPartialState>,
               private todosService: TodoDataService,
-              private authFacade: AuthFacadeService) {}
+              private authFacade: PublicAuthFacadeService) {}
 }

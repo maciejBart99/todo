@@ -1,8 +1,8 @@
 <mat-toolbar>
   <todo-application-todo-nav></todo-application-todo-nav>
   <span class="spacer"></span>
-  <ng-container *ngIf="user; else logInButton">
-    <h5>{{ user.firstName }} {{ user.lastName }}
+  <ng-container *ngIf="userName; else logInButton">
+    <h5>{{ userName }}
       <button mat-raised-button (click)="logOut.emit()">
       Log out
       </button>

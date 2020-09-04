@@ -4,6 +4,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [CommonModule,
@@ -14,6 +16,9 @@ import { StoreModule } from '@ngrx/store';
     RouterModule.forRoot([
       {path: '**', redirectTo: 'todo/regular'}
     ]),
-    StoreModule.forRoot({})],
+    StoreModule.forRoot({}),
+    BrowserModule,
+    CommonModule,
+    BrowserAnimationsModule,],
 })
 export class TodoAppMobileCoreModule {}

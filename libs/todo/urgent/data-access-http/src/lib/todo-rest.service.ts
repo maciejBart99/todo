@@ -3,7 +3,7 @@ import { TodoDataService } from '@todo-application/todo/regular/util-abstract-da
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { TodosEntity } from '@todo-application/todo/domain';
-import { UserModel } from '@todo-application/shared/domain';
+import { delay } from 'rxjs/operators';
 
 @Injectable()
 export class TodoRestService implements TodoDataService {
@@ -12,21 +12,21 @@ export class TodoRestService implements TodoDataService {
 
   constructor(private http: HttpClient) {}
 
-  getAllTodos(user: UserModel): Observable<TodosEntity[]> {
-      return this.http.get<TodosEntity[]>(this.getResourceUrlBase(user));
+  getAllTodos(userId: string): Observable<TodosEntity[]> {
+      return this.http.get<TodosEntity[]>(this.getResourceUrlBase(userId)).pipe(delay(2000));
   }
-  addTodo(user: UserModel, newTodo: TodosEntity) {
-    return this.http.post<TodosEntity>(this.getResourceUrlBase(user), {...newTodo, ownerId: user?.id});
+  addTodo(userId: string, newTodo: TodosEntity) {
+    return this.http.post<TodosEntity>(this.getResourceUrlBase(userId), {...newTodo, ownerId: userId});
   }
-  editTodo(user: UserModel, entity: TodosEntity, patch: Partial<TodosEntity>): Observable<any> {
-    return this.http.patch<TodosEntity>(`${this.getResourceUrlBase(user)}/${entity.id}`, patch);
+  editTodo(userId: string, entity: TodosEntity, patch: Partial<TodosEntity>): Observable<any> {
+    return this.http.patch<TodosEntity>(`${this.getResourceUrlBase(userId)}/${entity.id}`, patch);
   }
-  removeTodo(user: UserModel, entity: TodosEntity): Observable<any> {
-    return this.http.delete<{}>(`${this.getResourceUrlBase(user)}/${entity.id}`);
+  removeTodo(userId: string, entity: TodosEntity): Observable<any> {
+    return this.http.delete<{}>(`${this.getResourceUrlBase(userId)}/${entity.id}`);
   }
 
-  private getResourceUrlBase(user: UserModel): string{
-      if (user) return `user/${user.id}/${this.resourceUrl}`;
+  private getResourceUrlBase(userId: string): string{
+      if (userId) return `user/${userId}/${this.resourceUrl}`;
       else return this.resourceUrl;
   }
 }
