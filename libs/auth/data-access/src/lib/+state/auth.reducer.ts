@@ -1,6 +1,6 @@
 import { createReducer, on, Action } from '@ngrx/store';
 import * as authActions from './auth.actions'
-import { UserModel } from '@todo-application/shared/domain';
+import { UserModel } from '@todo-application/auth/domain';
 
 export const AUTH_FEATURE_KEY = 'auth';
 

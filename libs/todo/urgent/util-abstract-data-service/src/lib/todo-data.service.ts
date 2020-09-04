@@ -1,14 +1,13 @@
 import {  Observable } from 'rxjs';
 import { TodosEntity } from '@todo-application/todo/domain';
-import { UserModel } from '@todo-application/shared/domain';
 
 export abstract class TodoDataService {
 
-  abstract getAllTodos(user: UserModel): Observable<TodosEntity[]>
+  abstract getAllTodos(userId: string): Observable<TodosEntity[]>
 
-  abstract addTodo(user: UserModel, newTodo: TodosEntity)
+  abstract addTodo(userId: string, newTodo: TodosEntity)
 
-  abstract editTodo(user: UserModel, entity: TodosEntity, patch: Partial<TodosEntity>): Observable<any>
+  abstract editTodo(userId: string, entity: TodosEntity, patch: Partial<TodosEntity>): Observable<any>
 
-  abstract removeTodo(user: UserModel, entity: TodosEntity): Observable<any>
+  abstract removeTodo(userId: string, entity: TodosEntity): Observable<any>
 }

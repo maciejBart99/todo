@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { UserModel } from '@todo-application/shared/domain';
 
 @Component({
   selector: 'todo-application-user-bar',
@@ -7,7 +6,7 @@ import { UserModel } from '@todo-application/shared/domain';
   styleUrls: ['./user-bar.component.scss']
 })
 export class UserBarComponent {
-  @Input() user: UserModel;
+  @Input() userName: string;
   @Output() logIn: EventEmitter<void> = new EventEmitter<void>();
   @Output() logOut: EventEmitter<void> = new EventEmitter<void>();
 }

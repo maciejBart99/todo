@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { UserModel } from '@todo-application/shared/domain';
+import { UserModel } from '@todo-application/auth/domain';
 
 export const userLoggedIn = createAction(
   '[Auth] User logged in',

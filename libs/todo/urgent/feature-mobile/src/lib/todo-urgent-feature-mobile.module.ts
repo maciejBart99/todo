@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { TodoUrgentDataAccessNgrxModule } from '@todo-application/todo/urgent/data-access-ngrx';
 import { TodoUiModule } from '@todo-application/todo/ui';
 import { RouterModule } from '@angular/router';
-import { TodoCrudComponent } from './todo-crud/todo-crud.component';
 import { TodoUrgentDataAccessCachedModule } from '@todo-application/todo/urgent/data-access-cached';
+import { TodoCrudComponent, TodoUrgentFeatureTodoModule } from '@todo-application/todo/urgent/feature-todo';
 
 @NgModule({
   imports: [
@@ -12,11 +12,10 @@ import { TodoUrgentDataAccessCachedModule } from '@todo-application/todo/urgent/
     TodoUrgentDataAccessCachedModule,
     TodoUrgentDataAccessNgrxModule,
     TodoUiModule,
+    TodoUrgentFeatureTodoModule,
     RouterModule.forChild([
       {path: '', component: TodoCrudComponent, pathMatch: 'full'}
     ]),
-  ],
-  declarations: [TodoCrudComponent],
-  exports: [TodoCrudComponent]
+  ]
 })
 export class TodoUrgentFeatureMobileModule {}
