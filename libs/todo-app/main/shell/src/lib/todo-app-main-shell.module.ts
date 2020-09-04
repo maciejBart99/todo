@@ -9,10 +9,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { SharedUiUserBarModule } from '@todo-application/shared/ui-user-bar';
+import { AuthPublicModule } from '@todo-application/auth/public';
 
 @NgModule({
   imports: [CommonModule,
     TodoShellWebModule,
+    AuthPublicModule,
     AuthShellModule,
     SharedUiHeaderModule,
     MatButtonModule,
