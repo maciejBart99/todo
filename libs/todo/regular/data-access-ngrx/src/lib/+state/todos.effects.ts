@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { createEffect, Actions, ofType, act } from '@ngrx/effects';
+import { createEffect, Actions, ofType } from '@ngrx/effects';
 import { fetch, pessimisticUpdate } from '@nrwl/angular';
 
 import * as TodosActions from './todos.actions';
 import { delay, map, switchMap, take } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromTodos from './todos.reducer';
-import { TodoDataService } from '../services/todo-data.service';
+import { TodoDataService } from '@todo-application/todo/regular/util-abstract-data-service';
 import { AuthFacadeService } from '@todo-application/auth/public';
 
 @Injectable()
@@ -20,7 +20,7 @@ export class TodosEffects {
       ofType(TodosActions.loadTodos),
       fetch({
         run: (action) => {
-          return this.todosService.getAllTodos().pipe(
+          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user => this.todosService.getAllTodos(user)),
             delay(2000), // fake delay to show spinner
             map(todos => TodosActions.loadTodosSuccess({ todos: todos }))
           );
@@ -37,7 +37,7 @@ export class TodosEffects {
       ofType(TodosActions.editTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.todosService.editTodo(action.todo, action.patch).pipe(
+          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, action.patch)),
             map(_ => {
               return TodosActions.editTodoSuccess({todo: action.todo, patch: action.patch});
             })
@@ -55,7 +55,7 @@ export class TodosEffects {
       ofType(TodosActions.toggleDone),
       pessimisticUpdate({
         run: (action) => {
-          return this.todosService.editTodo(action.todo, {done: !action.todo.done}).pipe(
+          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, {done: !action.todo.done})),
             map(_ => {
               return TodosActions.editTodoSuccess({todo: action.todo, patch: {done: !action.todo.done}});
             })
@@ -73,7 +73,7 @@ export class TodosEffects {
       ofType(TodosActions.addTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.todosService.addTodo(action.todo).pipe(
+          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.addTodo(user, action.todo)),
             map(_ => TodosActions.addTodoSuccess({todo: action.todo}))
           );
         },
@@ -89,7 +89,7 @@ export class TodosEffects {
       ofType(TodosActions.removeTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.todosService.removeTodo(action.todo).pipe(
+          return this.authFacade.getCurrentUser().pipe(take(1), switchMap(user =>  this.todosService.removeTodo(user, action.todo)),
             map(_ => TodosActions.removeTodoSuccess({todo: action.todo}))
           );
         },

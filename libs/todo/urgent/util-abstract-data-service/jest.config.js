@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'todo-shell',
-  preset: '../../../jest.config.js',
+  name: 'todo-urgent-util-abstract-data-service',
+  preset: '../../../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -12,7 +12,8 @@ module.exports = {
       ],
     },
   },
-  coverageDirectory: '../../../coverage/libs/main/todo/shell',
+  coverageDirectory:
+    '../../../../coverage/libs/todo/urgent/util-abstract-data-service',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

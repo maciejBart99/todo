@@ -5,9 +5,7 @@ import { EffectsModule } from '@ngrx/effects';
 import * as fromTodos from './+state/todos.reducer';
 import { TodosEffects } from './+state/todos.effects';
 import { TodosFacade } from './+state/todos.facade';
-import { TodoDataService } from './services/todo-data.service';
 import { HttpClientModule } from '@angular/common/http';
-import { TodoRestService } from './services/todo-rest.service';
 
 @NgModule({
   imports: [
@@ -16,6 +14,6 @@ import { TodoRestService } from './services/todo-rest.service';
     StoreModule.forFeature(fromTodos.TODOS_FEATURE_KEY, fromTodos.reducer),
     EffectsModule.forFeature([TodosEffects]),
   ],
-  providers: [TodosFacade, {provide: TodoDataService, useClass: TodoRestService}],
+  providers: [TodosFacade],
 })
 export class TodoRegularDataAccessNgrxModule {}
