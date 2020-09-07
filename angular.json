@@ -21,10 +21,7 @@
             "polyfills": "apps/todo/src/polyfills.ts",
             "tsConfig": "apps/todo/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/todo/src/favicon.ico",
-              "apps/todo/src/assets"
-            ],
+            "assets": ["apps/todo/src/favicon.ico", "apps/todo/src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "apps/todo/src/styles.scss",
@@ -88,10 +85,7 @@
               "apps/todo/tsconfig.app.json",
               "apps/todo/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/todo/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/todo/**/*"]
           }
         },
         "test": {
@@ -126,13 +120,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/todo-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/todo-e2e/**/*"
-            ]
+            "tsConfig": ["apps/todo-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/todo-e2e/**/*"]
           }
         }
       }
@@ -150,10 +139,7 @@
               "libs/todo-app/core/tsconfig.lib.json",
               "libs/todo-app/core/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo-app/core/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo-app/core/**/*"]
           }
         },
         "test": {
@@ -259,10 +245,7 @@
               "apps/todo-mobile/tsconfig.app.json",
               "apps/todo-mobile/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/todo-mobile/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/todo-mobile/**/*"]
           }
         },
         "test": {
@@ -297,13 +280,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/todo-mobile-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/todo-mobile-e2e/**/*"
-            ]
+            "tsConfig": ["apps/todo-mobile-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/todo-mobile-e2e/**/*"]
           }
         }
       }
@@ -321,10 +299,7 @@
               "libs/auth/shell/tsconfig.lib.json",
               "libs/auth/shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/auth/shell/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/auth/shell/**/*"]
           }
         },
         "test": {
@@ -356,10 +331,7 @@
               "libs/auth/public/tsconfig.lib.json",
               "libs/auth/public/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/auth/public/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/auth/public/**/*"]
           }
         },
         "test": {
@@ -391,10 +363,7 @@
               "libs/shared/ui-header/tsconfig.lib.json",
               "libs/shared/ui-header/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shared/ui-header/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shared/ui-header/**/*"]
           }
         },
         "test": {
@@ -426,10 +395,7 @@
               "libs/todo/domain/tsconfig.lib.json",
               "libs/todo/domain/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo/domain/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo/domain/**/*"]
           }
         },
         "test": {
@@ -461,10 +427,7 @@
               "libs/todo/ui/tsconfig.lib.json",
               "libs/todo/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo/ui/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo/ui/**/*"]
           }
         },
         "test": {
@@ -636,10 +599,7 @@
               "libs/todo-app-mobile/core/tsconfig.lib.json",
               "libs/todo-app-mobile/core/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo-app-mobile/core/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo-app-mobile/core/**/*"]
           }
         },
         "test": {
@@ -671,10 +631,7 @@
               "libs/auth/data-access/tsconfig.lib.json",
               "libs/auth/data-access/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/auth/data-access/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/auth/data-access/**/*"]
           }
         },
         "test": {
@@ -986,10 +943,7 @@
               "libs/todo/shell-web/tsconfig.lib.json",
               "libs/todo/shell-web/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo/shell-web/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo/shell-web/**/*"]
           }
         },
         "test": {
@@ -1021,10 +975,7 @@
               "libs/todo/shell-mobile/tsconfig.lib.json",
               "libs/todo/shell-mobile/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo/shell-mobile/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo/shell-mobile/**/*"]
           }
         },
         "test": {
@@ -1056,10 +1007,7 @@
               "libs/auth/domain/tsconfig.lib.json",
               "libs/auth/domain/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/auth/domain/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/auth/domain/**/*"]
           }
         },
         "test": {
@@ -1161,10 +1109,7 @@
               "libs/todo-app/main/shell/tsconfig.lib.json",
               "libs/todo-app/main/shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/todo-app/main/shell/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/todo-app/main/shell/**/*"]
           }
         },
         "test": {
@@ -1218,32 +1163,64 @@
         }
       }
     },
-    "auth-ui-user-bar": {
+    "auth-ui-user-login-button": {
       "projectType": "library",
-      "root": "libs/auth/ui-user-bar",
-      "sourceRoot": "libs/auth/ui-user-bar/src",
+      "root": "libs/auth/ui-user-login-button",
+      "sourceRoot": "libs/auth/ui-user-login-button/src",
       "prefix": "todo-application",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/auth/ui-user-bar/tsconfig.lib.json",
-              "libs/auth/ui-user-bar/tsconfig.spec.json"
+              "libs/auth/ui-user-login-button/tsconfig.lib.json",
+              "libs/auth/ui-user-login-button/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/auth/ui-user-bar/**/*"
+              "!libs/auth/ui-user-login-button/**/*"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/auth/ui-user-bar/jest.config.js",
-            "tsConfig": "libs/auth/ui-user-bar/tsconfig.spec.json",
+            "jestConfig": "libs/auth/ui-user-login-button/jest.config.js",
+            "tsConfig": "libs/auth/ui-user-login-button/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/auth/ui-user-bar/src/test-setup.ts"
+            "setupFile": "libs/auth/ui-user-login-button/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-ui-navbar": {
+      "projectType": "library",
+      "root": "libs/shared/ui-navbar",
+      "sourceRoot": "libs/shared/ui-navbar/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui-navbar/tsconfig.lib.json",
+              "libs/shared/ui-navbar/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui-navbar/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui-navbar/jest.config.js",
+            "tsConfig": "libs/shared/ui-navbar/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/ui-navbar/src/test-setup.ts"
           }
         }
       },

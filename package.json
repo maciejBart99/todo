@@ -47,6 +47,7 @@
     "@nrwl/angular": "^10.1.0",
     "angular2-uuid": "^1.1.1",
     "bootstrap": "^4.5.2",
+    "jest-marbles": "^2.5.1",
     "ngx-autosize": "^1.8.0",
     "rxjs": "~6.5.5",
     "zone.js": "^0.10.2"

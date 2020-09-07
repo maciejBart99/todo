@@ -1,0 +1,12 @@
+<ng-container *ngIf="user$ | async ; else logInButton">
+  <h5>{{ (user$ | async).firstName }} {{ (user$ | async).lastName }}
+    <button mat-raised-button (click)="logOut()">
+      Log out
+    </button>
+  </h5>
+</ng-container>
+<ng-template #logInButton>
+  <button mat-raised-button (click)="logIn()">
+    Log in
+  </button>
+</ng-template>
