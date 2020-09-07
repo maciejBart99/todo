@@ -17,93 +17,205 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
   "projects": {
     "todo": {
-      "tags": ["type:application"]
+      "tags": [
+        "type:application"
+      ]
     },
     "todo-e2e": {
-      "tags": ["type:application"],
-      "implicitDependencies": ["todo"]
+      "tags": [
+        "type:application"
+      ],
+      "implicitDependencies": [
+        "todo"
+      ]
     },
     "todo-app-core": {
-      "tags": ["scope:todo-app", "type:core"]
+      "tags": [
+        "scope:todo-app",
+        "type:core"
+      ]
     },
     "todo-mobile": {
       "tags": []
     },
     "todo-mobile-e2e": {
       "tags": [],
-      "implicitDependencies": ["todo-mobile"]
+      "implicitDependencies": [
+        "todo-mobile"
+      ]
     },
     "auth-shell": {
-      "tags": ["scope:todo-app-auth", "type:shell"]
+      "tags": [
+        "scope:todo-app-auth",
+        "type:shell"
+      ]
     },
     "auth-public": {
-      "tags": ["scope:todo-app-auth", "type:public"]
-    },
-    "shared-domain": {
-      "tags": ["scope:todo-app-shared", "type:domain"]
+      "tags": [
+        "scope:todo-app-auth",
+        "type:public"
+      ]
     },
     "shared-ui-header": {
-      "tags": ["scope:todo-app-shared", "type:ui"]
-    },
-    "shared-ui-user-bar": {
-      "tags": ["scope:todo-app-shared", "type:ui"]
+      "tags": [
+        "scope:todo-app-shared",
+        "type:ui"
+      ]
     },
     "todo-domain": {
-      "tags": ["scope:todo-app-todo", "type:domain"]
-    },
-    "todo-shell": {
-      "tags": ["scope:todo-app-todo", "type:shell"]
+      "tags": [
+        "scope:todo-app-todo",
+        "type:domain"
+      ]
     },
     "todo-ui": {
-      "tags": ["scope:todo-app-todo", "type:ui"]
+      "tags": [
+        "scope:todo-app-todo",
+        "type:ui"
+      ]
     },
     "todo-regular-feature-web": {
-      "tags": ["scope:todo-app-todo-regular", "type:feature"]
+      "tags": [
+        "scope:todo-app-todo-regular",
+        "type:feature"
+      ]
     },
     "todo-regular-data-access-ngrx": {
-      "tags": ["scope:todo-app-todo-regular", "type:data-access"]
+      "tags": [
+        "scope:todo-app-todo-regular",
+        "type:data-access"
+      ]
     },
     "todo-urgent-feature-web": {
-      "tags": ["scope:todo-app-todo-urgent", "type:feature"]
+      "tags": [
+        "scope:todo-app-todo-urgent",
+        "type:feature"
+      ]
     },
     "todo-urgent-data-access-ngrx": {
-      "tags": ["scope:todo-app-todo-urgent", "type:data-access"]
+      "tags": [
+        "scope:todo-app-todo-urgent",
+        "type:data-access"
+      ]
     },
     "todo-app-mobile-core": {
-      "tags": ["scope:todo-app-mobile", "type:core"]
-    },
-    "todo-app-mobile-main-shell": {
-      "tags": ["scope:todo-app-mobile-main", "type:shell"]
-    },
-    "todo-app-main-shell": {
-      "tags": ["scope:todo-app-main", "type:shell"]
+      "tags": [
+        "scope:todo-app-mobile",
+        "type:core"
+      ]
     },
     "auth-data-access": {
-      "tags": ["scope:todo-app-auth", "type:data-access"]
+      "tags": [
+        "scope:todo-app-auth",
+        "type:data-access"
+      ]
     },
     "todo-urgent-data-access-http": {
-      "tags": ["scope:todo-urgent", "type:data-access"]
+      "tags": [
+        "scope:todo-urgent",
+        "type:data-access"
+      ]
     },
     "todo-regular-data-access-http": {
-      "tags": ["scope:todo-regular", "type:data-access"]
+      "tags": [
+        "scope:todo-regular",
+        "type:data-access"
+      ]
     },
     "todo-regular-data-access-cached": {
-      "tags": ["scope:todo-regular", "type:data-access"]
+      "tags": [
+        "scope:todo-regular",
+        "type:data-access"
+      ]
     },
     "todo-urgent-data-access-cached": {
-      "tags": ["scope:todo-urgent", "type:data-access"]
+      "tags": [
+        "scope:todo-urgent",
+        "type:data-access"
+      ]
     },
     "todo-urgent-feature-mobile": {
-      "tags": ["scope:todo-urgent", "type:feature"]
+      "tags": [
+        "scope:todo-urgent",
+        "type:feature"
+      ]
     },
     "todo-regular-feature-mobile": {
-      "tags": ["scope:todo-regular", "type:feature"]
+      "tags": [
+        "scope:todo-regular",
+        "type:feature"
+      ]
+    },
+    "todo-regular-util-abstract-data-service": {
+      "tags": [
+        "scope:todo-regular",
+        "type:util"
+      ]
+    },
+    "todo-urgent-util-abstract-data-service": {
+      "tags": [
+        "scope:todo-urgent",
+        "type:util"
+      ]
+    },
+    "todo-shell-web": {
+      "tags": [
+        "scope:todo-app-todo",
+        "type:shell"
+      ]
+    },
+    "todo-shell-mobile": {
+      "tags": [
+        "scope:todo",
+        "type:shell"
+      ]
+    },
+    "auth-domain": {
+      "tags": [
+        "scope:auth",
+        "type:domain"
+      ]
+    },
+    "todo-regular-feature-todo": {
+      "tags": [
+        "scope:todo",
+        "type:feature"
+      ]
+    },
+    "todo-urgent-feature-todo": {
+      "tags": [
+        "scope:todo-urgent",
+        "type:feature"
+      ]
+    },
+    "todo-app-main-shell": {
+      "tags": [
+        "scope:todo-app-main",
+        "type:shell"
+      ]
+    },
+    "todo-app-mobile-main-shell": {
+      "tags": [
+        "scope:todo-app-mobile-main",
+        "type:shell"
+      ]
+    },
+    "auth-ui-user-bar": {
+      "tags": [
+        "scope:todo-app-shared",
+        "type:ui"
+      ]
     }
   }
 }

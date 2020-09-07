@@ -25,6 +25,7 @@
     "update": "ng update @nrwl/workspace",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
+    "start-api": "json-server --routing json_web/routes.json --watch json_web/db.json",
     "help": "nx help"
   },
   "private": true,

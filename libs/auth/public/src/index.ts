@@ -1,2 +1,2 @@
 export * from './lib/auth-public.module';
-export * from './lib/auth-facade.service'
+export * from './lib/public-auth-facade.service'

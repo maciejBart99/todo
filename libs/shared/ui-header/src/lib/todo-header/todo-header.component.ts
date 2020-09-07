@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'todo-application-todo-header',
@@ -6,4 +6,6 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TodoHeaderComponent {}
+export class TodoHeaderComponent {
+  @Input() fontSize: number;
+}
