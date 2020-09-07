@@ -26,7 +26,8 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "start-api": "json-server --routing json_web/routes.json --watch json_web/db.json",
-    "help": "nx help"
+    "help": "nx help",
+    "release": "standard-version"
   },
   "private": true,
   "dependencies": {
@@ -50,6 +51,7 @@
     "jest-marbles": "^2.5.1",
     "ngx-autosize": "^1.8.0",
     "rxjs": "~6.5.5",
+    "standard-version": "^9.0.0",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
