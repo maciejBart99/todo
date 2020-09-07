@@ -8,7 +8,7 @@ import { tap } from 'rxjs/operators';
 @Injectable()
 export class CacheDataService extends TodoLocalStorageService {
   getAllTodos(userId: string): Observable<TodosEntity[]> {
-    if (localStorage.getItem(this.getFeatureKey(userId)) == null) {
+    if (localStorage.getItem(this.featureKey) == null) {
       return this.restService.getAllTodos(userId).pipe(tap(ls => super.saveTodos(userId, ls)));
     } else {
       return super.getAllTodos(userId);

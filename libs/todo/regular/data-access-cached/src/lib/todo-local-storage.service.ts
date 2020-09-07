@@ -10,9 +10,11 @@ export class TodoLocalStorageService implements TodoDataService {
   protected featureKey = 'todos-regular';
 
   getAllTodos(userId: string): Observable<TodosEntity[]> {
-    return of(localStorage.getItem(this.getFeatureKey(userId))).pipe(
+    return of(localStorage.getItem(this.featureKey)).pipe(
       map((ser) => {
-        return ser ? (JSON.parse(ser) as TodosEntity[]) : [];
+        return ser ? (JSON.parse(ser) as TodosEntity[]).filter(
+          todo => !userId  || (todo.ownerId && todo.ownerId === userId)
+        ) : [];
       })
     );
   }
@@ -50,11 +52,7 @@ export class TodoLocalStorageService implements TodoDataService {
   }
 
   protected saveTodos(userId: string, todos: TodosEntity[]): void {
-    localStorage.setItem(this.getFeatureKey(userId), JSON.stringify(todos));
-  }
-
-  protected getFeatureKey(userId: string): string {
-    return userId ? `${this.featureKey}-${userId}` : this.featureKey;
+    localStorage.setItem(this.featureKey, JSON.stringify(todos));
   }
 }
 
