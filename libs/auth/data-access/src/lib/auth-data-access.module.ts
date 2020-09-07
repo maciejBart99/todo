@@ -7,6 +7,6 @@ import { AuthFacade } from '@todo-application/auth/domain';
 
 @NgModule({
   imports: [CommonModule, StoreModule.forFeature(AUTH_FEATURE_KEY, reducer)],
-  providers: [{provide: AuthFacade, useClass: AuthStoreFacade}]
+  providers: [{ provide: AuthFacade, useClass: AuthStoreFacade }],
 })
 export class AuthDataAccessModule {}

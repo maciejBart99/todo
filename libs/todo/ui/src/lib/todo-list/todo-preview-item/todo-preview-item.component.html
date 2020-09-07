@@ -1,5 +1,11 @@
-<h3><mat-checkbox (change)="toggledDone.emit()" [checked]="todo.done">Done</mat-checkbox></h3>
-<textarea autosize matInput (change)="saveEdit($event.target.value)">{{ todo.content }}</textarea>
+<h3>
+  <mat-checkbox (change)="toggledDone.emit()" [checked]="todo.done"
+    >Done</mat-checkbox
+  >
+</h3>
+<textarea autosize matInput (change)="saveEdit($event.target.value)">{{
+  todo.content
+}}</textarea>
 <div>
   <button mat-icon-button color="warn" (click)="remove.emit()">
     <mat-icon>delete</mat-icon>

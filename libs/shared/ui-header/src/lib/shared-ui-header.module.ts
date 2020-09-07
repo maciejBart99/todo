@@ -5,6 +5,6 @@ import { TodoHeaderComponent } from './todo-header/todo-header.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [TodoHeaderComponent],
-  exports: [TodoHeaderComponent]
+  exports: [TodoHeaderComponent],
 })
 export class SharedUiHeaderModule {}

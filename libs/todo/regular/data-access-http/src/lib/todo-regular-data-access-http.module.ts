@@ -4,17 +4,17 @@ import { TodoDataService } from '@todo-application/todo/regular/util-abstract-da
 
 @NgModule({})
 export class TodoRegularDataAccessHttpModule {
-  static asMainProvider () {
+  static asMainProvider() {
     return {
       ngModule: TodoRegularDataAccessHttpModule,
-      providers: [ {provide: TodoDataService, useClass: TodoRestService} ]
-    }
+      providers: [{ provide: TodoDataService, useClass: TodoRestService }],
+    };
   }
 
-  static asHelper () {
+  static asHelper() {
     return {
       ngModule: TodoRegularDataAccessHttpModule,
-      providers: [ TodoRestService ]
-    }
+      providers: [TodoRestService],
+    };
   }
 }

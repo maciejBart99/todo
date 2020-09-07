@@ -4,16 +4,21 @@ import { TodoRegularDataAccessNgrxModule } from '@todo-application/todo/regular/
 import { TodoUiModule } from '@todo-application/todo/ui';
 import { RouterModule } from '@angular/router';
 import { TodoRegularDataAccessCachedModule } from '@todo-application/todo/regular/data-access-cached';
-import { TodoCrudComponent, TodoRegularFeatureTodoModule } from '@todo-application/todo/regular/feature-todo';
+import {
+  TodoCrudComponent,
+  TodoRegularFeatureTodoModule,
+} from '@todo-application/todo/regular/feature-todo';
 
 @NgModule({
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     TodoRegularDataAccessCachedModule,
     TodoRegularDataAccessNgrxModule,
     TodoUiModule,
     TodoRegularFeatureTodoModule,
     RouterModule.forChild([
-      {path: '', component: TodoCrudComponent, pathMatch: 'full'}
-    ]),],
+      { path: '', component: TodoCrudComponent, pathMatch: 'full' },
+    ]),
+  ],
 })
 export class TodoRegularFeatureMobileModule {}

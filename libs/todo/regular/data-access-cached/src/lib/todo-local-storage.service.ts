@@ -6,15 +6,16 @@ import { TodosEntity } from '@todo-application/todo/domain';
 
 @Injectable()
 export class TodoLocalStorageService implements TodoDataService {
-
   protected featureKey = 'todos-regular';
 
   getAllTodos(userId: string): Observable<TodosEntity[]> {
     return of(localStorage.getItem(this.featureKey)).pipe(
       map((ser) => {
-        return ser ? (JSON.parse(ser) as TodosEntity[]).filter(
-          todo => !userId  || (todo.ownerId && todo.ownerId === userId)
-        ) : [];
+        return ser
+          ? (JSON.parse(ser) as TodosEntity[]).filter(
+              (todo) => !userId || (todo.ownerId && todo.ownerId === userId)
+            )
+          : [];
       })
     );
   }
@@ -29,7 +30,11 @@ export class TodoLocalStorageService implements TodoDataService {
     );
   }
 
-  editTodo(userId :string, entity: TodosEntity, patch: Partial<TodosEntity>): Observable<any> {
+  editTodo(
+    userId: string,
+    entity: TodosEntity,
+    patch: Partial<TodosEntity>
+  ): Observable<any> {
     return this.getAllTodos(userId).pipe(
       map((all) => [
         ...all.filter((todo) => todo.id !== entity.id),
@@ -55,4 +60,3 @@ export class TodoLocalStorageService implements TodoDataService {
     localStorage.setItem(this.featureKey, JSON.stringify(todos));
   }
 }
-

@@ -24,19 +24,19 @@ export class TodosFacade {
   }
 
   addTodo(todo: TodosEntity): void {
-    this.store.dispatch(TodosActions.addTodo({todo: todo}));
+    this.store.dispatch(TodosActions.addTodo({ todo: todo }));
   }
 
   toggleTodoDone(todo: TodosEntity): void {
-    this.store.dispatch(TodosActions.toggleDone({todo: todo}));
+    this.store.dispatch(TodosActions.toggleDone({ todo: todo }));
   }
 
   removeTodo(todo: TodosEntity): void {
-    this.store.dispatch(TodosActions.removeTodo({todo: todo}));
+    this.store.dispatch(TodosActions.removeTodo({ todo: todo }));
   }
 
   editTodo(todo: TodosEntity, patch: Partial<TodosEntity>): void {
     console.log(todo);
-    this.store.dispatch(TodosActions.editTodo({todo: todo, patch: patch}));
+    this.store.dispatch(TodosActions.editTodo({ todo: todo, patch: patch }));
   }
 }

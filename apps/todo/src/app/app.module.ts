@@ -6,9 +6,7 @@ import { TodoAppCoreModule } from '@todo-application/todo-app/core';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-            TodoAppMainShellModule,
-              TodoAppCoreModule,],
+  imports: [TodoAppMainShellModule, TodoAppCoreModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -4,9 +4,8 @@ import { TodoCrudComponent } from './todo-crud/todo-crud.component';
 import { TodoUiModule } from '@todo-application/todo/ui';
 
 @NgModule({
-  imports: [CommonModule,  TodoUiModule,],
-  declarations: [TodoCrudComponent
-  ],
-  exports: [TodoCrudComponent]
+  imports: [CommonModule, TodoUiModule],
+  declarations: [TodoCrudComponent],
+  exports: [TodoCrudComponent],
 })
 export class TodoRegularFeatureTodoModule {}

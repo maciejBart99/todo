@@ -5,7 +5,6 @@ import * as AuthActions from './auth.actions';
 import * as AuthSelectors from './auth.selectors';
 import { AuthFacade, UserModel } from '@todo-application/auth/domain';
 
-
 @Injectable()
 export class AuthStoreFacade implements AuthFacade {
   user$ = this.store.pipe(select(AuthSelectors.getCurrentUser));
@@ -13,7 +12,7 @@ export class AuthStoreFacade implements AuthFacade {
   constructor(private store: Store<fromAuth.AuthPartialState>) {}
 
   logIn(user: UserModel): void {
-    this.store.dispatch(AuthActions.userLoggedIn({user}));
+    this.store.dispatch(AuthActions.userLoggedIn({ user }));
   }
 
   logOut(): void {

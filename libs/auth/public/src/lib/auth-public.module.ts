@@ -4,6 +4,6 @@ import { PublicAuthFacadeService } from './public-auth-facade.service';
 
 @NgModule({
   imports: [CommonModule],
-  providers: [PublicAuthFacadeService]
+  providers: [PublicAuthFacadeService],
 })
 export class AuthPublicModule {}
