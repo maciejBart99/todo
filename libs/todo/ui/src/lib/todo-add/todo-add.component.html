@@ -1,6 +1,11 @@
 <h2>Add new task</h2>
 <mat-form-field class="w-100">
-  <textarea matInput placeholder="Todo content" class="w-100" [formControl]="control"></textarea>
+  <textarea
+    matInput
+    placeholder="Todo content"
+    class="w-100"
+    [formControl]="control"
+  ></textarea>
 </mat-form-field>
 <div>
   <button mat-raised-button color="accent" (click)="addTodo()">Add</button>

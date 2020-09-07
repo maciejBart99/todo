@@ -8,8 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { UserLoginButtonComponent } from './user-login-button/user-login-button.component';
 
 @NgModule({
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatMenuModule, RouterModule, MatIconModule],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatMenuModule,
+    RouterModule,
+    MatIconModule,
+  ],
   declarations: [UserLoginButtonComponent],
-  exports: [UserLoginButtonComponent]
+  exports: [UserLoginButtonComponent],
 })
 export class AuthUiUserLoginButtonModule {}

@@ -15,17 +15,29 @@ import { MatButtonModule } from '@angular/material/button';
 import { AutosizeModule } from 'ngx-autosize';
 
 @NgModule({
-  imports: [CommonModule, MatFormFieldModule, ReactiveFormsModule, MatGridListModule, MatCheckboxModule, MatIconModule, MatProgressSpinnerModule, MatInputModule, MatButtonModule, AutosizeModule],
+  imports: [
+    CommonModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatButtonModule,
+    AutosizeModule,
+  ],
   declarations: [
     TodoListComponent,
     TodoAddComponent,
     TodoPreviewItemComponent,
-    TodoLoadingComponent],
+    TodoLoadingComponent,
+  ],
   exports: [
     TodoListComponent,
     TodoAddComponent,
     TodoPreviewItemComponent,
-    TodoLoadingComponent
-  ]
+    TodoLoadingComponent,
+  ],
 })
 export class TodoUiModule {}

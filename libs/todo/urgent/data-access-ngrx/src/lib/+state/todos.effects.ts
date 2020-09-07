@@ -11,22 +11,26 @@ import { TodoDataService } from '@todo-application/todo/urgent/util-abstract-dat
 
 @Injectable()
 export class TodosEffects {
-  setUser$ = createEffect(() => this.authFacade.getCurrentUserId().pipe(
-    map(_ => TodosActions.loadTodos())
-  ));
+  setUser$ = createEffect(() =>
+    this.authFacade
+      .getCurrentUserId()
+      .pipe(map((_) => TodosActions.loadTodos()))
+  );
 
   loadTodos$ = createEffect(() =>
     this.actions$.pipe(
       ofType(TodosActions.loadTodos),
       fetch({
         run: (action) => {
-          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user => this.todosService.getAllTodos(user)),
-            map(todos => TodosActions.loadTodosSuccess({ todos: todos }))
+          return this.authFacade.getCurrentUserId().pipe(
+            take(1),
+            switchMap((user) => this.todosService.getAllTodos(user)),
+            map((todos) => TodosActions.loadTodosSuccess({ todos: todos }))
           );
         },
         onError(a, e: any) {
           return TodosActions.loadTodosFailure();
-        }
+        },
       })
     )
   );
@@ -36,9 +40,16 @@ export class TodosEffects {
       ofType(TodosActions.editTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, action.patch)),
-            map(_ => {
-              return TodosActions.editTodoSuccess({todo: action.todo, patch: action.patch});
+          return this.authFacade.getCurrentUserId().pipe(
+            take(1),
+            switchMap((user) =>
+              this.todosService.editTodo(user, action.todo, action.patch)
+            ),
+            map((_) => {
+              return TodosActions.editTodoSuccess({
+                todo: action.todo,
+                patch: action.patch,
+              });
             })
           );
         },
@@ -54,9 +65,18 @@ export class TodosEffects {
       ofType(TodosActions.toggleDone),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.editTodo(user, action.todo, {done: !action.todo.done})),
-            map(_ => {
-              return TodosActions.editTodoSuccess({todo: action.todo, patch: {done: !action.todo.done}});
+          return this.authFacade.getCurrentUserId().pipe(
+            take(1),
+            switchMap((user) =>
+              this.todosService.editTodo(user, action.todo, {
+                done: !action.todo.done,
+              })
+            ),
+            map((_) => {
+              return TodosActions.editTodoSuccess({
+                todo: action.todo,
+                patch: { done: !action.todo.done },
+              });
             })
           );
         },
@@ -72,8 +92,10 @@ export class TodosEffects {
       ofType(TodosActions.addTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.addTodo(user, action.todo)),
-            map(_ => TodosActions.addTodoSuccess({todo: action.todo}))
+          return this.authFacade.getCurrentUserId().pipe(
+            take(1),
+            switchMap((user) => this.todosService.addTodo(user, action.todo)),
+            map((_) => TodosActions.addTodoSuccess({ todo: action.todo }))
           );
         },
         onError: (action, error) => {
@@ -88,8 +110,12 @@ export class TodosEffects {
       ofType(TodosActions.removeTodo),
       pessimisticUpdate({
         run: (action) => {
-          return this.authFacade.getCurrentUserId().pipe(take(1), switchMap(user =>  this.todosService.removeTodo(user, action.todo)),
-            map(_ => TodosActions.removeTodoSuccess({todo: action.todo}))
+          return this.authFacade.getCurrentUserId().pipe(
+            take(1),
+            switchMap((user) =>
+              this.todosService.removeTodo(user, action.todo)
+            ),
+            map((_) => TodosActions.removeTodoSuccess({ todo: action.todo }))
           );
         },
         onError: (action, error) => {
@@ -99,8 +125,10 @@ export class TodosEffects {
     )
   );
 
-  constructor(private actions$: Actions,
-              private store: Store<fromTodos.TodosPartialState>,
-              private todosService: TodoDataService,
-              private authFacade: PublicAuthFacadeService) {}
+  constructor(
+    private actions$: Actions,
+    private store: Store<fromTodos.TodosPartialState>,
+    private todosService: TodoDataService,
+    private authFacade: PublicAuthFacadeService
+  ) {}
 }

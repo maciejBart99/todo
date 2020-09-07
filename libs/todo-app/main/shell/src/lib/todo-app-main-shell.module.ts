@@ -13,7 +13,8 @@ import { AuthPublicModule } from '@todo-application/auth/public';
 import { SharedUiNavbarModule } from '@todo-application/shared/ui-navbar';
 
 @NgModule({
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     TodoShellWebModule,
     AuthPublicModule,
     AuthShellModule,
@@ -23,8 +24,9 @@ import { SharedUiNavbarModule } from '@todo-application/shared/ui-navbar';
     SharedUiNavbarModule,
     MatIconModule,
     AuthUiUserLoginButtonModule,
-    RouterModule],
+    RouterModule,
+  ],
   declarations: [MainComponent],
-  exports: [MainComponent]
+  exports: [MainComponent],
 })
 export class TodoAppMainShellModule {}

@@ -24,11 +24,12 @@ export const getAllTodos = createSelector(getTodosState, (state: State) =>
 );
 
 export const getAllDone = createSelector(getAllTodos, (todos: TodosEntity[]) =>
-  todos.filter(todo => todo.done)
+  todos.filter((todo) => todo.done)
 );
 
-export const getAllNotDone = createSelector(getAllTodos, (todos: TodosEntity[]) =>
-  todos.filter(todo => !todo.done)
+export const getAllNotDone = createSelector(
+  getAllTodos,
+  (todos: TodosEntity[]) => todos.filter((todo) => !todo.done)
 );
 
 export const getTodosEntities = createSelector(getTodosState, (state: State) =>

@@ -6,7 +6,11 @@ import { TodoRegularDataAccessHttpModule } from '@todo-application/todo/regular/
 import { TodoDataService } from '@todo-application/todo/regular/util-abstract-data-service';
 
 @NgModule({
-  imports: [CommonModule, HttpClientModule, TodoRegularDataAccessHttpModule.asHelper()],
-  providers: [{provide: TodoDataService, useClass: CacheDataService }]
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    TodoRegularDataAccessHttpModule.asHelper(),
+  ],
+  providers: [{ provide: TodoDataService, useClass: CacheDataService }],
 })
 export class TodoRegularDataAccessCachedModule {}

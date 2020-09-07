@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Component({
   selector: 'todo-application-user-login-button',
-  templateUrl: './user-login-button.component.html'
+  templateUrl: './user-login-button.component.html',
 })
 export class UserLoginButtonComponent {
   user$: Observable<UserModel>;
@@ -17,7 +17,7 @@ export class UserLoginButtonComponent {
     this.authFacade.logIn({
       id: 'xxx',
       firstName: 'Maciej',
-      lastName: 'Lukasik'
+      lastName: 'Lukasik',
     });
   }
 

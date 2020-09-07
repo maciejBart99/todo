@@ -8,17 +8,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
-      maxAge: 25
+      maxAge: 25,
     }),
-    RouterModule.forRoot([
-      {path: '**', redirectTo: 'todo/regular'}
-    ]),
+    RouterModule.forRoot([{ path: '**', redirectTo: 'todo/regular' }]),
     StoreModule.forRoot({}),
     BrowserModule,
     CommonModule,
-    BrowserAnimationsModule,],
+    BrowserAnimationsModule,
+  ],
 })
 export class TodoAppMobileCoreModule {}

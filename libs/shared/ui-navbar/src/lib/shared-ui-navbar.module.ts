@@ -9,8 +9,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule, MatToolbarModule, MatIconModule, MatMenuModule, MatButtonModule, RouterModule],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    RouterModule,
+  ],
   declarations: [NavbarComponent, NavMenuComponent],
-  exports: [NavbarComponent]
+  exports: [NavbarComponent],
 })
 export class SharedUiNavbarModule {}

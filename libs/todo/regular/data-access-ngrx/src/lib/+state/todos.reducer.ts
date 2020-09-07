@@ -20,14 +20,14 @@ export const todosAdapter: EntityAdapter<TodosEntity> = createEntityAdapter<
 
 export const initialState: State = todosAdapter.getInitialState({
   loaded: false,
-  resourceType: 'regular'
+  resourceType: 'regular',
 });
 
 const todosReducer = createReducer(
   initialState,
   on(TodosActions.loadTodos, (state) => ({
     ...state,
-    loaded: false
+    loaded: false,
   })),
   on(TodosActions.loadTodosSuccess, (state, { todos }) => {
     state = todosAdapter.removeAll({ ...state, loaded: true });
@@ -37,10 +37,11 @@ const todosReducer = createReducer(
     todosAdapter.addOne(todo, { ...state })
   ),
   on(TodosActions.editTodoSuccess, (state, { todo, patch }) =>
-      todosAdapter.updateOne({ id: todo.id, changes: patch }, { ...state })
+    todosAdapter.updateOne({ id: todo.id, changes: patch }, { ...state })
   ),
-  on(TodosActions.removeTodoSuccess, (state, { todo}) =>
-    todosAdapter.removeOne(todo.id, { ...state }))
+  on(TodosActions.removeTodoSuccess, (state, { todo }) =>
+    todosAdapter.removeOne(todo.id, { ...state })
+  )
   // , on(TodosActions.changeType, (state, { resourceType }) =>
   //   ({...state, resourceType: resourceType}))
 );

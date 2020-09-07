@@ -9,7 +9,9 @@ import { tap } from 'rxjs/operators';
 export class CacheDataService extends TodoLocalStorageService {
   getAllTodos(userId: string): Observable<TodosEntity[]> {
     if (localStorage.getItem(this.featureKey) == null) {
-      return this.restService.getAllTodos(userId).pipe(tap(ls => super.saveTodos(userId, ls)));
+      return this.restService
+        .getAllTodos(userId)
+        .pipe(tap((ls) => super.saveTodos(userId, ls)));
     } else {
       return super.getAllTodos(userId);
     }
@@ -19,4 +21,3 @@ export class CacheDataService extends TodoLocalStorageService {
     super();
   }
 }
-

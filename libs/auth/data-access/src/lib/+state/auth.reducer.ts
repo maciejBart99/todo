@@ -1,5 +1,5 @@
 import { createReducer, on, Action } from '@ngrx/store';
-import * as authActions from './auth.actions'
+import * as authActions from './auth.actions';
 import { UserModel } from '@todo-application/auth/domain';
 
 export const AUTH_FEATURE_KEY = 'auth';
@@ -13,18 +13,18 @@ export interface AuthPartialState {
 }
 
 export const initialState: State = {
-  user: null
-}
+  user: null,
+};
 
 const authReducer = createReducer(
   initialState,
-  on(authActions.userLoggedIn, (state, {user}) => ({
+  on(authActions.userLoggedIn, (state, { user }) => ({
     ...state,
-    user: user
+    user: user,
   })),
   on(authActions.userLoggedOut, (state) => ({
     ...state,
-    user: null
+    user: null,
   }))
 );
 

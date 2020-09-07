@@ -22,18 +22,16 @@ export const addTodoSuccess = createAction(
   props<{ todo: TodosEntity }>()
 );
 
-export const addTodoFailure = createAction(
-  '[Todos regular] Add todo failure'
-);
+export const addTodoFailure = createAction('[Todos regular] Add todo failure');
 
 export const editTodo = createAction(
   '[Todos regular] Edit todo',
-  props<{ todo: TodosEntity, patch: Partial<TodosEntity> }>(),
+  props<{ todo: TodosEntity; patch: Partial<TodosEntity> }>()
 );
 
 export const editTodoSuccess = createAction(
   '[Todos regular] Edit todo success',
-  props<{ todo: TodosEntity, patch: Partial<TodosEntity> }>()
+  props<{ todo: TodosEntity; patch: Partial<TodosEntity> }>()
 );
 
 export const editTodoFailure = createAction(

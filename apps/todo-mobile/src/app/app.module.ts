@@ -6,9 +6,7 @@ import { TodoAppMobileMainShellModule } from '@todo-application/todo-app-mobile/
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-            TodoAppMobileMainShellModule,
-    TodoAppMobileCoreModule,],
+  imports: [TodoAppMobileMainShellModule, TodoAppMobileCoreModule],
   providers: [],
   bootstrap: [AppComponent],
 })

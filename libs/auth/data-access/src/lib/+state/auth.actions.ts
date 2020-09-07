@@ -6,6 +6,4 @@ export const userLoggedIn = createAction(
   props<{ user: UserModel }>()
 );
 
-export const userLoggedOut = createAction(
-  '[Auth] User logged out'
-);
+export const userLoggedOut = createAction('[Auth] User logged out');

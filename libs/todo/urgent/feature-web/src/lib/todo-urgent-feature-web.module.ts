@@ -4,7 +4,10 @@ import { RouterModule } from '@angular/router';
 import { TodoUiModule } from '@todo-application/todo/ui';
 import { TodoUrgentDataAccessNgrxModule } from '@todo-application/todo/urgent/data-access-ngrx';
 import { TodoUrgentDataAccessHttpModule } from '@todo-application/todo/urgent/data-access-http';
-import { TodoCrudComponent, TodoUrgentFeatureTodoModule } from '@todo-application/todo/urgent/feature-todo';
+import {
+  TodoCrudComponent,
+  TodoUrgentFeatureTodoModule,
+} from '@todo-application/todo/urgent/feature-todo';
 
 @NgModule({
   imports: [
@@ -14,8 +17,8 @@ import { TodoCrudComponent, TodoUrgentFeatureTodoModule } from '@todo-applicatio
     TodoUiModule,
     TodoUrgentFeatureTodoModule,
     RouterModule.forChild([
-      {path: '', component: TodoCrudComponent, pathMatch: 'full'}
+      { path: '', component: TodoCrudComponent, pathMatch: 'full' },
     ]),
-  ]
+  ],
 })
 export class TodoUrgentFeatureWebModule {}

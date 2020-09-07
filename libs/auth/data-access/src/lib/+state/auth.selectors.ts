@@ -5,6 +5,7 @@ export const getAuthState = createFeatureSelector<AuthPartialState, State>(
   AUTH_FEATURE_KEY
 );
 
-export const getCurrentUser = createSelector(getAuthState, (state: State) =>
-  state.user
+export const getCurrentUser = createSelector(
+  getAuthState,
+  (state: State) => state.user
 );
