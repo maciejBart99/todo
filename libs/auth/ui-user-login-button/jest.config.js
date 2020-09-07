@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'auth-ui-user-bar',
+  name: 'auth-ui-user-login-button',
   preset: '../../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -12,7 +12,7 @@ module.exports = {
       ],
     },
   },
-  coverageDirectory: '../../../coverage/libs/main/shared/ui-user-bar',
+  coverageDirectory: '../../../coverage/libs/main/shared/ui-navbar',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

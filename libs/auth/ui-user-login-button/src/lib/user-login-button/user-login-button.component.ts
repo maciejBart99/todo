@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AuthFacade, UserModel } from '@todo-application/auth/domain';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'todo-application-user-bar',
-  templateUrl: './user-bar.component.html',
-  styleUrls: ['./user-bar.component.scss']
+  selector: 'todo-application-user-login-button',
+  templateUrl: './user-login-button.component.html'
 })
-export class UserBarComponent {
+export class UserLoginButtonComponent {
   user$: Observable<UserModel>;
 
   constructor(private authFacade: AuthFacade) {
@@ -21,8 +20,8 @@ export class UserBarComponent {
       lastName: 'Lukasik'
     });
   }
+
   logOut(): void {
     this.authFacade.logOut();
   }
-
 }
