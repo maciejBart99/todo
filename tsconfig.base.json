@@ -10,35 +10,20 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@todo-application/todo-app/core": [
-        "libs/todo-app/core/src/index.ts"
-      ],
-      "@todo-application/auth/shell": [
-        "libs/auth/shell/src/index.ts"
-      ],
-      "@todo-application/auth/public": [
-        "libs/auth/public/src/index.ts"
-      ],
+      "@todo-application/todo-app/core": ["libs/todo-app/core/src/index.ts"],
+      "@todo-application/auth/shell": ["libs/auth/shell/src/index.ts"],
+      "@todo-application/auth/public": ["libs/auth/public/src/index.ts"],
       "@todo-application/shared/ui-header": [
         "libs/shared/ui-header/src/index.ts"
       ],
-      "@todo-application/todo/domain": [
-        "libs/todo/domain/src/index.ts"
-      ],
-      "@todo-application/todo/ui": [
-        "libs/todo/ui/src/index.ts"
-      ],
+      "@todo-application/todo/domain": ["libs/todo/domain/src/index.ts"],
+      "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"],
       "@todo-application/todo/regular/feature-web": [
         "libs/todo/regular/feature-web/src/index.ts"
       ],
@@ -81,15 +66,11 @@
       "@todo-application/todo/urgent/util-abstract-data-service": [
         "libs/todo/urgent/util-abstract-data-service/src/index.ts"
       ],
-      "@todo-application/todo/shell-web": [
-        "libs/todo/shell-web/src/index.ts"
-      ],
+      "@todo-application/todo/shell-web": ["libs/todo/shell-web/src/index.ts"],
       "@todo-application/todo/shell-mobile": [
         "libs/todo/shell-mobile/src/index.ts"
       ],
-      "@todo-application/auth/domain": [
-        "libs/auth/domain/src/index.ts"
-      ],
+      "@todo-application/auth/domain": ["libs/auth/domain/src/index.ts"],
       "@todo-application/todo/regular/feature-todo": [
         "libs/todo/regular/feature-todo/src/index.ts"
       ],
@@ -102,13 +83,13 @@
       "@todo-application/todo-app-mobile/main/shell": [
         "libs/todo-app-mobile/main/shell/src/index.ts"
       ],
-      "@todo-application/auth/ui-user-bar": [
-        "libs/auth/ui-user-bar/src/index.ts"
+      "@todo-application/auth/ui-user-login-button": [
+        "libs/auth/ui-user-login-button/src/index.ts"
+      ],
+      "@todo-application/shared/ui-navbar": [
+        "libs/shared/ui-navbar/src/index.ts"
       ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
