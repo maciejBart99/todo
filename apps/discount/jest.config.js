@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'todo-ui',
-  preset: '../../../jest.config.js',
+  name: 'discount',
+  preset: '../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -12,7 +12,7 @@ module.exports = {
       ],
     },
   },
-  coverageDirectory: '../../../coverage/libs/main/todo/ui',
+  coverageDirectory: '../../coverage/apps/discount',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

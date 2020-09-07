@@ -1,0 +1,6 @@
+export * from './lib/models/discounts.model'
+export * from './lib/models/season.model'
+export * from './lib/models/segment.model'
+export * from './lib/models/discount-entry.model'
+export * from './lib/models/discount.model'
+export * from './lib/interfaces/discount-row.interface'

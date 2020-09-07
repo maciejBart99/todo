@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div *ngFor="let season of seasons$ | async" class="col-12 col-md-6 col-lg-4">
+      <todo-application-discount-season [season]="season"
+                                        (entryEdited)="discountChanged($event)"></todo-application-discount-season>
+    </div>
+    <div class="col-12">
+      <todo-application-discount-persist-changes (persist)="saveChanges()"></todo-application-discount-persist-changes>
+    </div>
+  </div>
+</div>
+<todo-application-todo-loading [showLoading]="(loading$ | async)"></todo-application-todo-loading>

@@ -1,0 +1,7 @@
+<h2>
+  {{ season.season }}
+</h2>
+<todo-application-discount-segment *ngFor="let segment of season.segments"
+                                   [segment]="segment"
+                                    (entryEdited)="entryEdited.emit($event)">
+</todo-application-discount-segment>

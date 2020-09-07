@@ -414,38 +414,6 @@
         }
       }
     },
-    "todo-ui": {
-      "projectType": "library",
-      "root": "libs/todo/ui",
-      "sourceRoot": "libs/todo/ui/src",
-      "prefix": "todo-application",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/todo/ui/tsconfig.lib.json",
-              "libs/todo/ui/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/todo/ui/**/*"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/todo/ui/jest.config.js",
-            "tsConfig": "libs/todo/ui/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/todo/ui/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      }
-    },
     "todo-regular-feature-web": {
       "projectType": "library",
       "root": "libs/todo/regular/feature-web",
@@ -1221,6 +1189,294 @@
             "tsConfig": "libs/shared/ui-navbar/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/shared/ui-navbar/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "discount": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/discount",
+      "sourceRoot": "apps/discount/src",
+      "prefix": "todo-application",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/discount",
+            "index": "apps/discount/src/index.html",
+            "main": "apps/discount/src/main.ts",
+            "polyfills": "apps/discount/src/polyfills.ts",
+            "tsConfig": "apps/discount/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/discount/src/favicon.ico",
+              "apps/discount/src/assets"
+            ],
+            "styles": [
+              "apps/discount/src/styles.scss",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/bootstrap/scss/bootstrap.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/discount/src/environments/environment.ts",
+                  "with": "apps/discount/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "discount:build",
+            "proxyConfig": "proxy.conf.json"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "discount:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "discount:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/discount/tsconfig.app.json",
+              "apps/discount/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/discount/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/discount/jest.config.js",
+            "tsConfig": "apps/discount/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/discount/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "discount-e2e": {
+      "root": "apps/discount-e2e",
+      "sourceRoot": "apps/discount-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/discount-e2e/cypress.json",
+            "tsConfig": "apps/discount-e2e/tsconfig.e2e.json",
+            "devServerTarget": "discount:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "discount:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/discount-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/discount-e2e/**/*"]
+          }
+        }
+      }
+    },
+    "discount-domain": {
+      "projectType": "library",
+      "root": "libs/discount/domain",
+      "sourceRoot": "libs/discount/domain/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/discount/domain/tsconfig.lib.json",
+              "libs/discount/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/discount/domain/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/discount/domain/jest.config.js",
+            "tsConfig": "libs/discount/domain/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/discount/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "discount-data-access": {
+      "projectType": "library",
+      "root": "libs/discount/data-access",
+      "sourceRoot": "libs/discount/data-access/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/discount/data-access/tsconfig.lib.json",
+              "libs/discount/data-access/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/discount/data-access/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/discount/data-access/jest.config.js",
+            "tsConfig": "libs/discount/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/discount/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "discount-feature": {
+      "projectType": "library",
+      "root": "libs/discount/feature",
+      "sourceRoot": "libs/discount/feature/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/discount/feature/tsconfig.lib.json",
+              "libs/discount/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/discount/feature/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/discount/feature/jest.config.js",
+            "tsConfig": "libs/discount/feature/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/discount/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-ui": {
+      "projectType": "library",
+      "root": "libs/shared/ui",
+      "sourceRoot": "libs/shared/ui/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui/tsconfig.lib.json",
+              "libs/shared/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui/jest.config.js",
+            "tsConfig": "libs/shared/ui/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "discount-ui": {
+      "projectType": "library",
+      "root": "libs/discount/ui",
+      "sourceRoot": "libs/discount/ui/src",
+      "prefix": "todo-application",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/discount/ui/tsconfig.lib.json",
+              "libs/discount/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/discount/ui/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/discount/ui/jest.config.js",
+            "tsConfig": "libs/discount/ui/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/discount/ui/src/test-setup.ts"
           }
         }
       },

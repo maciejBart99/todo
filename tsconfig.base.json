@@ -23,7 +23,6 @@
         "libs/shared/ui-header/src/index.ts"
       ],
       "@todo-application/todo/domain": ["libs/todo/domain/src/index.ts"],
-      "@todo-application/todo/ui": ["libs/todo/ui/src/index.ts"],
       "@todo-application/todo/regular/feature-web": [
         "libs/todo/regular/feature-web/src/index.ts"
       ],
@@ -88,7 +87,18 @@
       ],
       "@todo-application/shared/ui-navbar": [
         "libs/shared/ui-navbar/src/index.ts"
-      ]
+      ],
+      "@todo-application/discount/domain": [
+        "libs/discount/domain/src/index.ts"
+      ],
+      "@todo-application/discount/data-access": [
+        "libs/discount/data-access/src/index.ts"
+      ],
+      "@todo-application/discount/feature": [
+        "libs/discount/feature/src/index.ts"
+      ],
+      "@todo-application/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@todo-application/discount/ui": ["libs/discount/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

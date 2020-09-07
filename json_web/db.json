@@ -31,5 +31,1837 @@
       "ownerId": "xxx",
       "userId": "xxx"
     }
-  ]
+  ],
+  "discounts": {
+    "data" : {
+      "brand" : "FATE",
+      "seasons" : [ {
+        "season" : "Summer",
+        "segments" : [ {
+          "segment" : "PASS",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "8e95c188-84d0-499f-a0f9-7465076bba14",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "b05bc480-380d-49bb-9ecd-35100a5b0cd8",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "32a62f24-fab1-475b-88da-54d8e1603c3c",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "8a7ee6c7-4225-49ab-a905-d2a9f4eccf16",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "260126e0-f9e6-4946-83be-80655b68ab39",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "9de5e5bc-381c-4418-a9c9-409be42db557",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "550c61a3-49ca-40ba-98fb-3df32aa9a41a",
+              "key" : "discount_eq_15_lbl",
+              "value" : 20
+            }, {
+              "id" : "575f8f61-39cb-417b-a063-ececedf8caeb",
+              "key" : "discount_under_15_lbl",
+              "value" : 10
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "16e03beb-3787-405d-a6ce-994fe800df93",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "0ad8ac2d-f175-4afa-9d2f-9db289dd9b1d",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "01ea359b-d674-464a-b3c3-3eab4fb19fa3",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "b8e31237-9893-4aac-8396-41ec6b1a70e4",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "948d0f6b-27dd-4fc3-b70b-b785ba7cec39",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "57138aff-b4f4-4b54-b76e-3515c1201838",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "f75155e7-c734-4237-99fc-52668e7f81aa",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "345e91af-bf3f-4641-be00-02dc67feaa38",
+              "key" : "discount_under_15_lbl",
+              "value" : 20
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "f3e23f63-5647-4f3f-aa54-e430053d4055",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "5fbe4eb3-b9c3-4e56-8de6-f62f3332a0bd",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "b331c391-b230-4d80-b8cf-4e9c0daf5c14",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "8a184a5f-df88-4c55-858d-6e4260a0985c",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "dfe3e5b7-b534-4d33-af03-e6c8efbb9518",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "09b0946b-9083-4623-a688-c96a765af8e3",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "a3602e58-ea08-4461-a859-a075c616aa56",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "0ef1f77c-b7f3-41e1-adc7-3cbc333db5ca",
+              "key" : "discount_under_15_lbl",
+              "value" : 10
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "0361e2f2-0717-4551-8c18-d9af92b48f0e",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "f1272de6-1536-4f97-8697-1e96ba75e9eb",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "180cd121-a064-472d-9422-2aa44d8945e6",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "a3fce01c-83d0-4986-9205-0ad86901ff11",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "58482e60-b627-4cc6-927a-04815931c262",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "8204b04d-aed6-440a-980f-42b3cdb4e121",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "763ac7ad-8a1f-4196-a1fd-5c594a6ca495",
+              "key" : "discount_under_15_lbl",
+              "value" : 35
+            }, {
+              "id" : "1af49c5b-e172-414b-9100-cd9ae6c9a764",
+              "key" : "discount_eq_15_lbl",
+              "value" : 20
+            } ]
+          } ]
+        }, {
+          "segment" : "VAN",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "d33fee65-8c47-4073-a784-fbec81e7e436",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "e1a9a26e-8343-4e9b-a94c-fc4edd0e01cc",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "2dda52f2-7356-4bea-bc3e-ca18316f7e77",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "451a6c7e-d459-432b-ad54-724385bbdfba",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "c0eb3623-4133-42ad-b67d-6b6f93581d1e",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "32d74547-ef57-49e4-8c42-6e05ea3eaee2",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "c5430a8e-2b4a-4139-8cee-b57c880f82a4",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "deffcf69-fb93-451e-9491-08ce3b9259a7",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "accf0c0f-5e8e-4805-99c5-82480cce4f22",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "5a1c171b-b66e-4006-9854-a32af73c7f5e",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "804bb3a0-47ea-4f18-92e8-bdb4c03ee733",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "7748d8f4-98e5-4815-b50c-b08442baafff",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "e0c99785-2f8e-40b8-9bc0-b536e86594d6",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "2bde56e2-45c0-4858-85e6-fa35806b1475",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "23ce2c89-fe92-46d2-b148-408c1bdb83bb",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "5eb18660-72e9-4d57-b907-798ece9eb3b0",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "4abe281f-f491-4cde-b793-fe47ebfb4137",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "6161f126-52e8-4a4f-b8a8-2ec46aa7acc9",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "eaf2d0d3-9965-4f63-92da-6bf1006e2ac1",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "fd759f8a-0ae7-422b-a487-d87ac8edb534",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "374efd37-86ce-432c-8829-ad5852692570",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "5b0cd048-d11c-4f6c-ab70-a45b438d83ca",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "b81c103c-baca-4ce5-a70f-a6e1a31c63da",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "e219a745-602f-47c2-bf1c-f79df93538c9",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "a2aca4d2-e5fc-4c89-a12e-e34aa4f460f9",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "1bcfd729-b668-4247-9946-51607dd09cbd",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "8d1d85b3-5a4e-4924-8f01-4bf4cb914b48",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "f1948782-c726-4276-ba89-257d51bb1547",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "92124acc-c1d3-44f1-b991-62a67000abc7",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "feb90937-ccbe-4c25-92f6-53805103795c",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "a22b7bf6-7ccb-4f41-9c8c-c13b1e493e5d",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "dc680671-60d2-44e0-af70-a660adc2f5f3",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          } ]
+        }, {
+          "segment" : "SUV",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "705f2ac0-da6b-4897-9bff-5ac5ea02f1d2",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "9ab57d93-0d4d-464b-96ec-d0bb69d2695e",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "fb80e0bb-91a7-4745-8ded-54fc0e4f1575",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "3000d95e-ec43-4020-8343-dfc173660f9d",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "51c31a34-8ae8-465d-9f7f-e9375a5ee7bb",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "4a283d4c-4859-4eb6-a456-0cc48989b134",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "c173ebc2-230a-4664-babc-a91e2b913679",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "931010a9-2864-4b77-824d-25b0fcb27846",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "3502ca33-4d3b-4b13-9d24-b59130c95b34",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "e4b86f60-df73-4616-ac0d-6c18bcea27e1",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "faf37d7c-228b-41f0-9338-101a4e106fb1",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "8a770e63-f8d7-46f2-adb6-9313ac2289b4",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "306a305f-a593-43e8-b1bb-4a1919de5b4d",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "619f32f4-d491-42be-a8be-06da8edba98e",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "252f16a9-2f25-4c3f-9096-e274d442b825",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "0e17d51f-865e-42ba-b345-65de3d768b82",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "37d577f0-9c31-4211-8b2d-56a9bd336c81",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "55b4a049-900b-4175-83f5-3f9ddc631b50",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "ade4c435-6eb7-430c-9c59-e33ff0853d98",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "e2a145ed-52f4-42ab-99f2-8652182bcb33",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "20967ca0-d7e1-4f2f-8a7a-61a621ed330c",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "27906f80-c187-4192-9e21-4c5d814cda72",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "db7c63e7-36f9-405d-9be5-94095cc6f6b5",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "d73affb5-e1b7-4197-b55d-f33b3d0174cf",
+              "key" : "discount_eq_15_lbl",
+              "value" : 15
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "6fb4e623-da50-4ee0-8de5-200c8cc8ad1f",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "30ceeec1-56d9-4680-ac7c-6ff06be4c6b1",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "cc1014a3-83a6-40a3-93dc-aaf51843fc4d",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "a89a93d9-0bda-4ebe-b1bd-719e0ddf016c",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "1c2d8ccf-bb1b-4670-9671-25ebf1864212",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "0129ab9e-bf3e-49c0-830e-e27eb87cc2e7",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "f8564668-06d5-4ab0-b2b0-21e5fe89ec70",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "2488c30a-b87c-4d11-8e0d-1a53b7a67f2b",
+              "key" : "discount_eq_15_lbl",
+              "value" : 15
+            } ]
+          } ]
+        }, {
+          "segment" : "LT4x4",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "a196c19e-77a8-4cdb-835c-a382ad929860",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "b933f71d-ed3a-4541-acb4-c342acf4a5c1",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "278110bc-687b-4f11-a862-336cdeb2b564",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "9c19d3bb-a69a-4f61-9d88-61bf92346138",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "eeb90fbd-b326-4c4f-91c7-1ff392d15fa1",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "9322ba7e-25ee-49ea-856c-1c7e3234d838",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "7927ed95-5bac-44a9-836d-89900ed508eb",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "337de6a7-f6ec-4f2e-b0d2-5a180714f754",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "eddeb23b-412b-48a1-adac-88a80c68f432",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "bf1b809a-0928-4351-936b-a8d687e5f768",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "07ab326f-f445-40a2-99d9-3aab2d38bbda",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "c9936d39-429f-45e7-b4bc-066886c2ab50",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "09f67b55-af40-4134-879b-28667410b2a6",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "804aee5a-e200-41a0-9dcc-646d42ed4327",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "71f2a06d-c4ee-4822-8640-2d5ed7bb776e",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "dc429385-dd3d-4241-90f9-3ff5f52ae9ba",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "cf370138-93e0-43a7-b3c0-c2b8f313ba40",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "157d09d3-029a-452c-bbe5-2e48b7977956",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "0fda74ef-177e-4bc3-81e0-c710f2a9e3bf",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "f227be0c-8f14-4000-abb7-e74a3480f46f",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "d9ee5c64-01b3-4b1c-9205-72b539a58357",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "f8f77718-eecf-4b04-bd82-38b096038f5f",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "b1522ee9-a65a-455b-b143-14b770702726",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "259d34c2-559c-48d3-982e-63b516242a42",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "4e5ac2f9-efe4-4c53-aaa9-357c87988fde",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "083e2646-7d32-4d1a-8b91-d6bce902c1cd",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "08d29591-3aae-476b-b7a8-b15a7be8566b",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "6979ff9a-0569-4ee6-9fe7-c85ea5ce4eef",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "4070bef9-b141-462d-99f0-6a1a621028ed",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "ffb830c6-ad95-4cdc-97c1-987671065f48",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "a0c083b8-8259-42f3-9611-09e8debbb68c",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "1539f080-d533-4322-9f11-233e79f8c54b",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          } ]
+        } ]
+      }, {
+        "season" : "AllSeason",
+        "segments" : [ {
+          "segment" : "PASS",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "a23d21c7-5436-48e2-b052-fd00041b5e0a",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "1e620deb-92e1-4163-9689-12e0217d6872",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "0e8dc67e-02ed-4d51-9eef-98b03b543b71",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "9aa6de16-4d52-4d98-8fb2-584cf14e47b3",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "cd92e823-4fdb-47ae-97d7-14e21dd756bf",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "fc9c6b0e-156b-4b97-8f13-57cca48bcf42",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "c9fb0258-a5ea-41ad-a6fb-71cff01b3980",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "a2a53334-966a-4899-9249-c51f499e01e8",
+              "key" : "discount_eq_15_lbl",
+              "value" : 10
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "3d01cbb7-9769-459e-8bfc-4371b9e00a1b",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "8a3a30a3-96de-4df1-b66b-e6798836f708",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "f3f3d8bf-e7b6-4c1b-aec0-822ec99fc303",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "1f7dcebc-eacd-411e-8058-1f178ce96dd8",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "980c070b-ca2d-4388-95c4-be291c087058",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "8f42e873-64b3-4610-bd69-d25b1716a621",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "07a89ade-ba70-43ad-aa7e-d979b6a20289",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "6977edbf-99a2-4951-812f-57c35062e4af",
+              "key" : "discount_eq_15_lbl",
+              "value" : 30
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "be5a4b06-3530-4eb9-b51c-f8c880297049",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "934d9a8c-0c57-4739-83b0-e4cc12261d76",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "bfabab27-ce2a-44fb-8af3-939aa74f2a26",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "e433b26d-3bf8-4e95-ad37-b0d93fe20d72",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "cefc8323-af5f-4518-8378-0bb4afa39f02",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "79f5df32-4250-4d61-9b33-72b60a0ff93d",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "07a3319c-ab85-4aff-a847-4fb07ab0195f",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "0f9e23da-f5de-4d2a-bd00-3b688848b6a9",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "8d7718e5-dfb0-4aad-8ece-3ec7288375ae",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "79c474ab-9260-4e6f-b114-ffe9e4a19190",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "5be1d17e-7aef-4409-b2df-d30e234afce4",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "96db2a12-191c-4ae3-9af9-d9aa58b8dc75",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "b96fdca9-885b-4ad3-93d1-d3e3445c946e",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "5ba08404-caf1-414d-aeb3-378a90417d9b",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "53e002d5-7735-4e67-9a94-fcaccb0f62e8",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "f54c7ab7-8fe9-4e98-ad1b-0815cffb5e48",
+              "key" : "discount_eq_15_lbl",
+              "value" : 37
+            } ]
+          } ]
+        }, {
+          "segment" : "VAN",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "8f94fb01-3ada-4303-b77f-da8c581d690d",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "95151310-c692-435b-a4a6-bcff512bacd4",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "0bfc7591-ea58-49fc-95f0-da83bbfbcfbb",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "945b202e-5b98-493c-a8aa-34a2c9156f15",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "e2d69225-0d33-49bf-a7d4-e152e892e256",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "87d3aa6a-81fa-45a3-9cbf-d28b84e9101c",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "fc5bb078-5438-41b3-ac96-bcb1e542639f",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "060388dc-d2d3-4954-8eba-2b6bae83cecb",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "b5201833-dbad-4eb2-8345-4bdd5e5b13e1",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "74c968cd-a164-4b1c-8d32-f26afd5f0219",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "b778c72f-6f55-47ae-87b9-61ef14a4efca",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "631a0c5d-4075-41e0-9b92-7d4fa3761d11",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "1a952044-0148-44c4-af83-5896ef4f830c",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "db175537-ec23-49e3-9971-7698c589de33",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "b030062e-c035-4f88-b8d2-53f282393966",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "7d855453-0e3b-4a85-aed5-b8eeb5d20b2d",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "c0860ef4-efdb-47e0-bca6-44254c912906",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "cda5ba98-5e65-4550-8881-4e52ca881808",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "be470e9e-9fbe-4271-aff5-4ddaee13988a",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "3dd3564a-131f-4a46-86c4-73c843c5173e",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "6f5d2a76-2ba9-4e6e-93aa-b9ff14a05e71",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "baf239a6-501b-42dc-9d6a-b368791a50f8",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "b36c5aec-cdb8-4913-899b-c1b037b9f71f",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "87b23144-aa08-4de6-9fbe-78cc0aaeb5ab",
+              "key" : "discount_eq_16_lbl",
+              "value" : 40
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "3480041e-78d1-44bf-8156-2ec357224cc2",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "b704d5e8-4937-4b33-901d-be7f6a19c6cb",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "edc6a494-b5e0-40c4-a278-7e8c48a0d593",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "8be665c6-e4bf-4c1b-992d-12a6ddf216d7",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "3dd3a424-c23e-4061-9420-2f21016f9baf",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "92c3d47e-14de-493c-86b3-e8e9ac1c4017",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "5a499614-2ee1-48be-b6a9-8ae3fa000c51",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "8257849d-dc33-47cf-95c6-b4d7d9183370",
+              "key" : "discount_eq_16_lbl",
+              "value" : 40
+            } ]
+          } ]
+        }, {
+          "segment" : "SUV",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "39a347b2-a498-4be5-ac3e-4275b142ca68",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "9c3fd761-cacd-47b1-a3e3-ad3de1734f76",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "d33fe9c0-c35b-4f5d-bd04-8929eea9ca19",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "314cd278-7028-4b6a-94ce-60754fdcadcc",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "d7329104-7c25-4ad9-9efc-580d39c6daf9",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "aaf6fa8e-c74f-4f70-ba88-c741d42ed2d1",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "3a8ed162-8a33-4bd2-b1a6-ee96846374f4",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "d458fa6c-1915-4030-8e1f-0e0244c3277d",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "6765a44b-c96c-49cb-b3b5-61e1c57ddbdc",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "c55fbfb7-2f53-4384-86de-bf40a835b4ea",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "2c6b0fa7-1214-47d9-8fa8-b17e8eb8a115",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "ceb946c1-00d6-4402-9caa-cccad2028764",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "4356ce0d-3273-4b2d-8950-22c00c4773b5",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "e21c4a74-0f6a-4a48-9e84-1d98f9153b37",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "9cecbbed-92f9-424d-a23a-ab8d9cc12035",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "fd7517e0-f129-47c4-af00-9ff6cc02e24c",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "e8d1ad99-0cd0-47e9-914f-2d94508e4532",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "15127674-abf2-45c7-a4be-08b3d68198e8",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "afb914ee-b3fd-45ab-a19d-a03ad560ba97",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "93a56878-e41c-408b-b9f1-ffabb200ebe3",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "3fa53af3-1108-43da-b83e-7e30a70417f0",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "cb0e0945-693f-4818-b99d-fccb094d56dd",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "c77f2675-7891-41c5-ab53-211d349405e0",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "431e55c6-ac27-4b0f-805c-42a802052f47",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "875f7481-e2fa-4176-b535-9f749b13a13f",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "10bf2274-0277-42e8-b084-c509c75810f5",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "0adf694a-34d6-4299-99cb-ae3d914efd80",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "b634bc71-4cea-4543-9b85-4cc8b6aac572",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "208093d9-54c9-4874-98ac-7b52ec057ec2",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "8da7af7f-654e-4112-b3d4-9b8fddbfd4ad",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "5481d0db-ea47-4c4e-9c15-220e1d82ae89",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "d2b855e5-a92f-4980-95ed-d5c9d63abb00",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          } ]
+        }, {
+          "segment" : "LT4x4",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "f4051d82-3e5f-4645-8a80-0f83dea150b7",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "1aecc5d0-4d32-47bb-8c4a-c09bd63be8e4",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "11ee2c76-b625-4677-8714-3d487b3d84de",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "93880d3c-e657-4f8f-868a-60bc80120d47",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "abec7261-562e-4ec5-ae81-5b393c5cfe72",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "3e67c66b-c107-46c4-9a49-e086a118a59d",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "8defb33b-0bad-4af1-8684-8fdd63316c04",
+              "key" : "discount_eq_15_lbl",
+              "value" : 10
+            }, {
+              "id" : "fd5f22d4-f646-4665-8098-b3937495ccb8",
+              "key" : "discount_eq_16_lbl",
+              "value" : 23
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "9d827227-7f1e-4e15-ac04-ada8aaabc9fc",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "ed04ffe5-206c-432e-b9d4-026461f27517",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "e153b5cb-5b78-4502-93ec-d377ee3a5ba8",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "e7f84842-5bc4-47dc-a967-7e397124034a",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "3ea8038e-e3c3-4ff7-9d67-22f13f9f0f02",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "f245c0e4-3623-4d5d-8e64-4eab11a5012f",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "e7f47a32-a183-4524-9424-c9be32895610",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "3813cc18-b1f7-4890-a58d-39823965b289",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "f72918ec-4e9d-43a4-9fa9-722c7b29f39e",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "206a0d8e-560f-424e-98dc-37cbd9f77064",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "dfd48890-48ef-41bb-9fd7-7b92d3c0c96e",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "f41d37ff-5972-4a2f-b671-d200c818565d",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "11a350a8-1330-4bcc-841b-59958dc93cda",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "451b70bb-49dc-4c9b-b030-df5d5cb0d4b9",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "9b70768e-98e7-49ec-8b2d-4a5f62bfef45",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "9f06cd8f-8491-493d-9d80-9b2aedf6e006",
+              "key" : "discount_eq_16_lbl",
+              "value" : 13
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "ef590385-cfb1-4ac3-8428-9a35d50c7773",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "e1434172-0ed5-43c3-a39d-9ac8b493518e",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "817a36d3-e53f-4229-806d-df593d916f5b",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "61b94229-9ff9-4dc2-b1d2-d7801c37c7d4",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "8ea11bb3-b503-4454-a044-bde5e2b248fb",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "5ac7f8c4-4004-44d8-a4fa-f0521e44b82d",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "5fa794c5-a7da-42c8-9a3b-51c8edc04ef9",
+              "key" : "discount_eq_15_lbl",
+              "value" : 10
+            }, {
+              "id" : "c90b3be2-9966-435b-aaee-284042673b82",
+              "key" : "discount_eq_16_lbl",
+              "value" : 33
+            } ]
+          } ]
+        } ]
+      }, {
+        "season" : "Winter",
+        "segments" : [ {
+          "segment" : "PASS",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "7328e2ff-9498-4cc0-ae45-84c29f33550e",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "b9672d42-005a-4ed5-9303-a3356303d183",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "b348fd6d-b9be-4cb2-8e66-055633f90b9a",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "a2bf6cca-27a9-4754-9cd3-038ff02f4c07",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "46cd5762-ca5b-46a6-a331-bafe797daf5f",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "e54fb875-0bfe-4a67-a6a8-063e07dba480",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "18d978e6-4632-4aa8-93dd-882700990216",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "e89ad4c9-98ad-40aa-9d07-fa9dee3c7cff",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "dd58d639-d495-4707-8f9a-481f7c593e07",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "00a5a844-fd21-4f92-b596-c3d0678c34ad",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "4a9fb8b2-5b18-4092-88cc-045aab74a392",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "effc7e0a-f176-44f1-8de4-34d808eb7509",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "d216ca28-f179-4d08-b20a-f1dc5ad742dc",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "9e675d63-09f2-48b1-9c89-7cdd2e8ad680",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "2fa5758e-325b-453a-aa4d-b05dc1ad1dfd",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "abff2fd0-f168-410d-b992-7f5ffb8aa160",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "68ace5fa-1f3b-43d4-a687-805272c19406",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "804d4763-d145-4d52-a5e8-1f1682438768",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "006237da-7bbd-4c39-b93c-20be5bac2753",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "064a03eb-0346-48de-9f02-6f9b1abbf9dd",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "ce88730b-bc79-4a25-a497-bd87ee692f5c",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "10a9cea1-7e10-4d99-89ed-b4888c4b9411",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "3767d901-4524-45b0-b08d-3191f1f590ce",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "5485c2bd-3665-4596-863e-4cd76bba1762",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "5d012ad1-37ce-4c57-bf91-9760f51d53e1",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "a5340fcf-f6a3-4b42-984d-33b77ebf02b2",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "332c63d0-e97b-4ff7-88fa-70fbdfc41800",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "ae21b7ea-047c-4fe8-a86e-f2c28855c262",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "541f071d-1737-41a0-b73f-aea98467c64b",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "431d91c9-b77c-4eb2-81c7-ba1ca00942d2",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "a804c695-e5c5-4a82-9458-6b00382a094b",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "9d7b09bc-8466-45ba-bd51-c4645056b258",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          } ]
+        }, {
+          "segment" : "VAN",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "0aa25d44-6ce3-4c17-8417-d4e0a23bbe88",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "14a35de8-5804-4314-91e5-c073b684e9be",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "29184367-0cc7-4873-97bb-c6f9a072fd74",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "ec9326f9-f30e-46b0-a75f-25b58243336f",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "f8501103-dbe2-41db-88b2-16c40cfe789a",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "b1785698-adc3-4234-9dc1-662a6bd21936",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "58877965-f691-4aca-9870-3fceda98cc5f",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "293feb53-ca15-4e71-8c3d-1ecee20e529b",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "6e3f28e7-f75e-4145-8949-97a9658be807",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "bc00df99-e2dd-427b-8037-385f2a996d07",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "222d5145-735b-4b5e-b7d1-cad5c107551a",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "5e320cde-336c-4b88-9878-184c8c0613bf",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "461d7521-61b9-4d0f-b110-77e123fa74a9",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "2ea7031c-ac70-4026-bb06-c3967c4b3123",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "c8ce3fab-4f21-4a2f-8b77-5150fcb68f82",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "542ea24f-050a-478b-949d-1552c41cea19",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "edbe0fbd-40b8-4ea0-a69c-f7e1a9a543f6",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "92f42576-975c-46fc-830d-15ebb28e4cea",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "05644505-2a8e-4724-982f-83760f90968e",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "e122ec2b-2ba1-4f22-9533-3f0c1ed75a75",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "243ea9ed-32ad-46fa-beb8-835bdc016ef9",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "e716e8cb-d49b-4703-a52f-996d73c57f14",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "0d528f84-64a1-4cdb-836f-7d2bd0b7b7a0",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "8eac7190-9381-48f0-801f-8df3f8bb8967",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "a3b1bbae-6ac7-4692-9057-78d2aace1f29",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "5be3955c-d727-4906-889a-9010da9e70ff",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "5f175248-527d-476b-94e3-37314479ef0e",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "a5a5a783-fe14-4dca-b1aa-49bf45a32ff1",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "5c882e66-6c4d-4a3b-a50d-8bf8f110a10e",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "bd7143d9-ecab-4cb4-a761-2df075a45a05",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "8fd254b2-4795-4425-b039-8002b1262798",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "feb43ac6-62d3-492e-94af-9db55109aa2b",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          } ]
+        }, {
+          "segment" : "SUV",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "2cd0d5a4-3e72-4978-b764-b4f253495cf8",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "c8d3dcba-52aa-4b3f-a5a1-7a1263ac73c9",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "aad82f1b-5ac8-4aec-94da-6a552dda2094",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "6e9dc29d-4ca7-4030-a74c-dc439088caa2",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "936d6b8a-6e80-4f1e-b352-4520fcd817d4",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "f62cf9f3-c581-4cc8-a413-76af3f0746f1",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "5323844d-a5e7-4445-86eb-3712229b9a65",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "89fa49be-27d3-465f-bf80-9a5a700c551a",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "a81f15ad-9e0f-4ba8-a0f3-de315fe1f38c",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "24adbb33-1c29-4645-aa5a-1e7a03a49e32",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "52459c85-2dba-4772-ac46-b39b878a123e",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "3f7da796-34c2-41f5-8e99-9b858c481820",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "81322f4f-90ed-4c35-9063-db43057742ee",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "718cc870-96ba-4845-a9a5-0d59fec77f81",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "997aa95d-9002-44ae-8e54-7893649adf04",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "6ee8ae22-ea09-41ce-b795-b1cf4ed61e18",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "7815a61a-cbd4-40db-8ee4-9e0463e41f95",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "060c0ac8-37b1-46fa-9096-2e1da9d5c8d1",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "d93702c3-ea2d-4454-b57f-3e1711b48f44",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "b94b52ee-ea73-49a9-a750-19c7c1f60bab",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "3ae320e8-e7d1-4725-bf16-fc75e79aba51",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "f862f46c-7872-4282-8fbb-46423c3d37ef",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "0f19ff8e-45ea-402e-8c5d-82944dc03799",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "7b882838-bffb-4db7-af89-ebdf2fe53604",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "b79ccd36-a28f-4f6b-aa4d-7b3bacf470c7",
+              "key" : "discount_under_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "0a316aaa-d822-4f8d-b799-5bc20483c6b2",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "323fb157-9e60-4a86-a7ed-3027133d159b",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "921f667e-e9ca-481c-bd0a-3222a21ec09a",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "af33cc5e-6099-40e3-9e7d-dd59f21f2439",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "d7cc0bbf-9431-4ff3-ae8d-d66b7ec0108e",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "35c39e8a-39f2-40b1-a74b-36b3ae3e4ba6",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "4e04b7cb-8266-463e-a72c-3e9ef6244924",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            } ]
+          } ]
+        }, {
+          "segment" : "LT4x4",
+          "discounts" : [ {
+            "label" : "Discount",
+            "editable" : true,
+            "tooltip" : "Discount",
+            "entries" : [ {
+              "id" : "d7d13627-110c-4269-98ab-a504960f4be3",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "84f0dddc-6dcb-48a6-8630-72a921bbb910",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "e92c05d7-33da-4d88-a9fa-f761ff2956d9",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "d0687e47-4994-46e3-a24f-d183cf4c62b8",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "ba43b2bd-4b25-463a-a1fe-f9e47d0a59d3",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "4e3e0e3d-dfc5-4467-beac-b69611b35af4",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "7517168c-8cc7-43bf-b30b-aef042573473",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "c2b0d00a-12e6-44f0-b6e2-c1c05665af7a",
+              "key" : "discount_under_15_lbl",
+              "value" : 1
+            } ]
+          }, {
+            "label" : "Bonus 1",
+            "editable" : true,
+            "tooltip" : "Bonus 1",
+            "entries" : [ {
+              "id" : "8ccde557-5747-457f-87c8-4972d8638b01",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "71938b87-7b3f-44c0-baba-dc9e08c01319",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "6d7fab5b-62e5-4f99-b65a-54cec72f2995",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "72f1ee31-9728-43fc-aab1-26e0c19bde7e",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "92d2c39c-f43d-4725-bfc0-3b04d79d144d",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "e5f6fb55-070c-4f91-9a69-91c214e02699",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "318f4d59-1f00-40e4-bf87-823d03adaf0c",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "17190680-8361-421b-8222-5309b7e4b4e5",
+              "key" : "discount_under_15_lbl",
+              "value" : 1
+            } ]
+          }, {
+            "label" : "Bonus 2",
+            "editable" : true,
+            "tooltip" : "Bonus 2",
+            "entries" : [ {
+              "id" : "b5ecb8fd-81ed-4ca3-a826-f3b416fa6d91",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "ca26d306-c91c-4453-8585-a6362c0912a8",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "25ad7335-4b41-4e34-b528-4b6bc15774e0",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "3c159ac6-3dc0-4a09-9f7e-7cf8b37bc1eb",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "0f9f1e20-4f03-4320-85c8-40af4d503b36",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "a17689ed-cce2-42ae-9bd4-b06f603d3868",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "62cecfb9-d8ec-46bf-b372-1e2afbceb588",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "bd4f412d-b182-440d-89a1-53812b83b82b",
+              "key" : "discount_under_15_lbl",
+              "value" : 1
+            } ]
+          }, {
+            "label" : "Sum",
+            "editable" : false,
+            "tooltip" : "Sum",
+            "entries" : [ {
+              "id" : "9cf5e772-dcde-49d4-b97e-e88593f243db",
+              "key" : "discount_eq_15_lbl",
+              "value" : 0
+            }, {
+              "id" : "a0f032b9-c12f-42c3-9126-36a1c9e31ca4",
+              "key" : "discount_eq_16_lbl",
+              "value" : 0
+            }, {
+              "id" : "f24a5995-78a7-40b7-b7ed-8199d3217ef1",
+              "key" : "discount_eq_17_lbl",
+              "value" : 0
+            }, {
+              "id" : "88734bc7-8345-4ea7-89f9-b013a157490e",
+              "key" : "discount_eq_18_lbl",
+              "value" : 0
+            }, {
+              "id" : "30aa747c-d0cb-416e-8398-6a7f31a0f0c0",
+              "key" : "discount_eq_19_lbl",
+              "value" : 0
+            }, {
+              "id" : "7fd7f333-9ad2-4cde-a294-ade593aff987",
+              "key" : "discount_eq_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "b1eed01d-019e-44c9-a45c-ff3fa9e95bc4",
+              "key" : "discount_over_20_lbl",
+              "value" : 0
+            }, {
+              "id" : "b5493833-e57c-4b33-90db-e4f0d9e01c37",
+              "key" : "discount_under_15_lbl",
+              "value" : 3
+            } ]
+          } ]
+        } ]
+      } ],
+      "_links" : {
+        "self" : {
+          "href" : "https://be-conti-prestock.dev.pf-env.com/api/core/v1/customers/53af2e5f-fe6c-4725-a632-61264b3b6707/brands/3a1eb856-9bc8-43fe-84cd-b534573cff19/discounts"
+        }
+      }
+    }
+  }
 }

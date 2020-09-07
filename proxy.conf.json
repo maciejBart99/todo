@@ -6,5 +6,9 @@
   "/user": {
     "target": "http://localhost:3000",
     "secure": false
+  },
+  "/discounts": {
+    "target": "http://localhost:3000",
+    "secure": false
   }
 }

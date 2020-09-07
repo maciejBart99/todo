@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoCrudComponent } from './todo-crud/todo-crud.component';
-import { TodoUiModule } from '@todo-application/todo/ui';
+import { SharedUiModule } from '@todo-application/shared/ui';
 
 @NgModule({
-  imports: [CommonModule, TodoUiModule],
+  imports: [CommonModule, SharedUiModule],
   declarations: [TodoCrudComponent],
   exports: [TodoCrudComponent],
 })

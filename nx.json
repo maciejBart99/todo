@@ -51,9 +51,6 @@
     "todo-domain": {
       "tags": ["scope:todo-app-todo", "type:domain"]
     },
-    "todo-ui": {
-      "tags": ["scope:todo-app-todo", "type:ui"]
-    },
     "todo-regular-feature-web": {
       "tags": ["scope:todo-app-todo-regular", "type:feature"]
     },
@@ -121,6 +118,28 @@
       "tags": ["scope:todo-app-shared", "type:ui"]
     },
     "shared-ui-navbar": {
+      "tags": []
+    },
+    "discount": {
+      "tags": []
+    },
+    "discount-e2e": {
+      "tags": [],
+      "implicitDependencies": ["discount"]
+    },
+    "discount-domain": {
+      "tags": []
+    },
+    "discount-data-access": {
+      "tags": ["scope:discount", "type:data-access"]
+    },
+    "discount-feature": {
+      "tags": []
+    },
+    "shared-ui": {
+      "tags": ["scope:todo-app-todo", "type:ui"]
+    },
+    "discount-ui": {
       "tags": []
     }
   }

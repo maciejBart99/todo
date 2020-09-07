@@ -40,4 +40,4 @@ import { AutosizeModule } from 'ngx-autosize';
     TodoLoadingComponent,
   ],
 })
-export class TodoUiModule {}
+export class SharedUiModule {}

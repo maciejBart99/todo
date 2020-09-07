@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoRegularDataAccessNgrxModule } from '@todo-application/todo/regular/data-access-ngrx';
-import { TodoUiModule } from '@todo-application/todo/ui';
+import { SharedUiModule } from '@todo-application/shared/ui';
 import { RouterModule } from '@angular/router';
 import { TodoRegularDataAccessCachedModule } from '@todo-application/todo/regular/data-access-cached';
 import {
@@ -14,7 +14,7 @@ import {
     CommonModule,
     TodoRegularDataAccessCachedModule,
     TodoRegularDataAccessNgrxModule,
-    TodoUiModule,
+    SharedUiModule,
     TodoRegularFeatureTodoModule,
     RouterModule.forChild([
       { path: '', component: TodoCrudComponent, pathMatch: 'full' },
