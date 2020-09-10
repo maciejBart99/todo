@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import { TodoDataService } from '@todo-application/todo/regular/util-abstract-data-service';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { TodosEntity } from '@todo-application/todo/domain';
+import { TodoDataService, TodosEntity } from '@todo-application/todo/domain';
 import { delay } from 'rxjs/operators';
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { TodoRestService } from './todo-rest.service';
-import { TodoDataService } from '@todo-application/todo/regular/util-abstract-data-service';
+import { TodoDataService } from '@todo-application/todo/domain';
 
 @NgModule({})
 export class TodoRegularDataAccessHttpModule {

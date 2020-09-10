@@ -6,8 +6,8 @@ import * as TodosActions from './todos.actions';
 import { delay, map, switchMap, take } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromTodos from './todos.reducer';
-import { TodoDataService } from '@todo-application/todo/regular/util-abstract-data-service';
 import { PublicAuthFacadeService } from '@todo-application/auth/public';
+import { TodoDataService } from '@todo-application/todo/domain';
 
 @Injectable()
 export class TodosEffects {

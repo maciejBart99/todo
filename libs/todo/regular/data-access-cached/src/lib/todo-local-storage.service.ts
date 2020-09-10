@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { from, Observable, of } from 'rxjs';
 import { filter, map, switchMap, tap, toArray } from 'rxjs/operators';
-import { TodoDataService } from '@todo-application/todo/regular/util-abstract-data-service';
-import { TodosEntity } from '@todo-application/todo/domain';
+import { TodoDataService, TodosEntity } from '@todo-application/todo/domain';
 
 @Injectable()
 export class TodoLocalStorageService implements TodoDataService {
