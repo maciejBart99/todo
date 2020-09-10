@@ -90,12 +90,6 @@
     "todo-regular-feature-mobile": {
       "tags": ["scope:todo-regular", "type:feature"]
     },
-    "todo-regular-util-abstract-data-service": {
-      "tags": ["scope:todo-regular", "type:util"]
-    },
-    "todo-urgent-util-abstract-data-service": {
-      "tags": ["scope:todo-urgent", "type:util"]
-    },
     "todo-shell-web": {
       "tags": ["scope:todo-app-todo", "type:shell"]
     },
@@ -121,7 +115,7 @@
       "tags": ["scope:todo-app-shared", "type:ui"]
     },
     "shared-ui-navbar": {
-      "tags": []
+      "tags": ["scope:shared", "type:ui"]
     }
   }
 }

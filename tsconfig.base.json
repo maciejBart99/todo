@@ -60,12 +60,6 @@
       "@todo-application/todo/regular/feature-mobile": [
         "libs/todo/regular/feature-mobile/src/index.ts"
       ],
-      "@todo-application/todo/regular/util-abstract-data-service": [
-        "libs/todo/regular/util-abstract-data-service/src/index.ts"
-      ],
-      "@todo-application/todo/urgent/util-abstract-data-service": [
-        "libs/todo/urgent/util-abstract-data-service/src/index.ts"
-      ],
       "@todo-application/todo/shell-web": ["libs/todo/shell-web/src/index.ts"],
       "@todo-application/todo/shell-mobile": [
         "libs/todo/shell-mobile/src/index.ts"
