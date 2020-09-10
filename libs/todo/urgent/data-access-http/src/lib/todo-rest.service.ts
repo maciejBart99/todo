@@ -25,13 +25,13 @@ export class TodoRestService implements TodoDataService {
     userId: string,
     entity: TodosEntity,
     patch: Partial<TodosEntity>
-  ): Observable<any> {
+  ): Observable<TodosEntity> {
     return this.http.patch<TodosEntity>(
       `${this.getResourceUrlBase(userId)}/${entity.id}`,
       patch
     );
   }
-  removeTodo(userId: string, entity: TodosEntity): Observable<any> {
+  removeTodo(userId: string, entity: TodosEntity): Observable<{}> {
     return this.http.delete<{}>(
       `${this.getResourceUrlBase(userId)}/${entity.id}`
     );
